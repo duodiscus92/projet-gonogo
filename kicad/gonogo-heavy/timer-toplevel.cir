@@ -1,0 +1,79 @@
+.title KiCad schematic
+U1 Net-_U1-Pad1_ NC_01 /Pulse-pause timer 1 de 2/P16 /Pulse-pause timer 1 de 2/P13 /Pulse-pause timer 1 de 2/PAUSE_ENABLE NC_02 Net-_U1-Pad7_ GND GND GND NC_03 /Pulse-pause timer 1 de 2/P14 /Pulse-pause timer 1 de 2/P15 NC_04 /Pulse-pause timer 1 de 2/1Hz VCC 4029
+U4 Net-_U1-Pad1_ NC_05 /Pulse-pause timer 1 de 2/P12 GND Net-_U1-Pad7_ NC_06 Net-_U4-Pad7_ GND GND GND NC_07 /Pulse-pause timer 1 de 2/P10 /Pulse-pause timer 1 de 2/P11 NC_08 /Pulse-pause timer 1 de 2/1Hz VCC 4029
+JP1 VCC /Pulse-pause timer 1 de 2/P16 GND Jumper_NC_Dual
+JP3 VCC /Pulse-pause timer 1 de 2/P15 GND Jumper_NC_Dual
+JP5 VCC /Pulse-pause timer 1 de 2/P14 GND Jumper_NC_Dual
+JP7 VCC /Pulse-pause timer 1 de 2/P13 GND Jumper_NC_Dual
+JP9 VCC /Pulse-pause timer 1 de 2/P12 GND Jumper_NC_Dual
+JP11 VCC /Pulse-pause timer 1 de 2/P11 GND Jumper_NC_Dual
+JP13 VCC /Pulse-pause timer 1 de 2/P10 GND Jumper_NC_Dual
+JP17 VCC /Pulse-pause timer 1 de 2/P8 GND Jumper_NC_Dual
+JP19 VCC /Pulse-pause timer 1 de 2/P7 GND Jumper_NC_Dual
+JP21 VCC /Pulse-pause timer 1 de 2/P6 GND Jumper_NC_Dual
+JP23 VCC /Pulse-pause timer 1 de 2/P5 GND Jumper_NC_Dual
+JP15 VCC GND GND Jumper_NC_Dual
+U7 Net-_U1-Pad1_ NC_09 /Pulse-pause timer 1 de 2/P8 /Pulse-pause timer 1 de 2/P5 Net-_U4-Pad7_ NC_10 Net-_U10-Pad5_ GND GND GND NC_11 /Pulse-pause timer 1 de 2/P6 /Pulse-pause timer 1 de 2/P7 NC_12 /Pulse-pause timer 1 de 2/1Hz VCC 4029
+U2 Net-_U1-Pad1_ NC_13 /Pulse-pause timer 1 de 2/U12 GND /Pulse-pause timer 1 de 2/PULSE_ENABLE NC_14 Net-_U2-Pad7_ GND GND GND NC_15 /Pulse-pause timer 1 de 2/U10 /Pulse-pause timer 1 de 2/U11 NC_16 /Pulse-pause timer 1 de 2/1Hz VCC 4029
+JP2 VCC /Pulse-pause timer 1 de 2/U12 GND Jumper_NC_Dual
+JP4 VCC /Pulse-pause timer 1 de 2/U11 GND Jumper_NC_Dual
+JP6 VCC /Pulse-pause timer 1 de 2/U10 GND Jumper_NC_Dual
+JP10 VCC /Pulse-pause timer 1 de 2/U8 GND Jumper_NC_Dual
+JP12 VCC /Pulse-pause timer 1 de 2/U7 GND Jumper_NC_Dual
+JP14 VCC /Pulse-pause timer 1 de 2/U6 GND Jumper_NC_Dual
+JP16 VCC GND GND Jumper_NC_Dual
+JP8 VCC GND GND Jumper_NC_Dual
+U5 Net-_U1-Pad1_ NC_17 /Pulse-pause timer 1 de 2/U8 GND Net-_U2-Pad7_ NC_18 Net-_U5-Pad7_ GND GND GND NC_19 /Pulse-pause timer 1 de 2/U6 /Pulse-pause timer 1 de 2/U7 NC_20 /Pulse-pause timer 1 de 2/1Hz VCC 4029
+U3 NC_21 NC_22 Net-_U3-Pad3_ NC_23 NC_24 NC_25 NC_26 GND NC_27 Net-_C2-Pad1_ Net-_C1-Pad1_ GND NC_28 NC_29 NC_30 VCC 4060
+Y1 Net-_C1-Pad1_ Net-_C2-Pad1_ 32,768 kHz
+R1 Net-_C1-Pad1_ Net-_C2-Pad1_ 2,2M
+C1 Net-_C1-Pad1_ Net-_C1-Pad2_ 220pF
+C2 Net-_C2-Pad1_ Net-_C1-Pad2_ 220pF
+U6 /Pulse-pause timer 1 de 2/1Hz Net-_U6-Pad2_ Net-_U3-Pad3_ GND Net-_U6-Pad2_ GND GND GND GND GND NC_31 NC_32 4013
+JP25 VCC /Pulse-pause timer 1 de 2/P4 GND Jumper_NC_Dual
+JP26 VCC /Pulse-pause timer 1 de 2/P3 GND Jumper_NC_Dual
+JP27 VCC /Pulse-pause timer 1 de 2/P2 GND Jumper_NC_Dual
+JP28 VCC /Pulse-pause timer 1 de 2/P1 GND Jumper_NC_Dual
+U10 Net-_U1-Pad1_ NC_33 /Pulse-pause timer 1 de 2/P4 /Pulse-pause timer 1 de 2/P1 Net-_U10-Pad5_ NC_34 Net-_U10-Pad7_ GND GND GND NC_35 /Pulse-pause timer 1 de 2/P2 /Pulse-pause timer 1 de 2/P3 NC_36 /Pulse-pause timer 1 de 2/1Hz VCC 4029
+JP18 VCC /Pulse-pause timer 1 de 2/U4 GND Jumper_NC_Dual
+JP20 VCC /Pulse-pause timer 1 de 2/U3 GND Jumper_NC_Dual
+JP22 VCC /Pulse-pause timer 1 de 2/U2 GND Jumper_NC_Dual
+JP24 VCC /Pulse-pause timer 1 de 2/U1 GND Jumper_NC_Dual
+U8 Net-_U1-Pad1_ NC_37 /Pulse-pause timer 1 de 2/U4 /Pulse-pause timer 1 de 2/U1 Net-_U5-Pad7_ NC_38 Net-_U13-Pad3_ GND GND GND NC_39 /Pulse-pause timer 1 de 2/U2 /Pulse-pause timer 1 de 2/U3 NC_40 /Pulse-pause timer 1 de 2/1Hz VCC 4029
+U9 Net-_C3-Pad1_ Net-_U1-Pad1_ GND Net-_U9-Pad4_ Net-_U9-Pad4_ Net-_U9-Pad6_ Net-_U9-Pad11_ Net-_U9-Pad6_ Net-_U9-Pad10_ Net-_U9-Pad11_ NC_41 Net-_U9-Pad10_ 40106
+C3 Net-_C3-Pad1_ GND 100uF
+D1 VCC Net-_C3-Pad1_ 1N4148
+U12 /Pulse-pause timer 1 de 2/PAUSE_ENABLE /Pulse-pause timer 1 de 2/RESET Net-_U10-Pad7_ Net-_R3-Pad1_ /Pulse-pause timer 1 de 2/PULSE_ENABLE 4012
+U13 /Pulse-pause timer 1 de 2/PULSE_ENABLE /Pulse-pause timer 1 de 2/PAUSE_ENABLE Net-_U13-Pad3_ Net-_U13-Pad3_ Net-_U13-Pad3_ 4012
+SW1 GND Net-_R3-Pad1_ SW_Push
+R2 VCC Net-_C3-Pad1_ 10k
+R3 Net-_R3-Pad1_ VCC 10k
+U11 /Pulse-pause timer 1 de 2/RESET Net-_U1-Pad1_ Net-_U11-Pad4_ GND Net-_U11-Pad6_ Net-_U11-Pad4_ Net-_U11-Pad6_ Net-_U11-Pad10_ Net-_U11-Pad10_ NC_42 /Pulse-pause timer 1 de 2/PULSE_ENABLE Net-_D3-Pad1_ 4049
+Q1 GND Net-_Q1-Pad2_ Net-_D2-Pad2_ 2N2222
+R4 Net-_Q1-Pad2_ /Pulse-pause timer 1 de 2/PULSE_ENABLE 56k
+J2 Net-_F1-Pad1_ GND Screw_Terminal_01x02
+U14 VDD GND VCC LM7805_TO220
+C16 VDD GND 100uF
+C17 GND VDD 100nF
+C12 GND VCC 100nF
+C10 GND VCC 100nF
+C8 GND VCC 100nF
+C6 GND VCC 100nF
+C14 GND VCC 100nF
+C4 GND VCC 100nF
+F1 Net-_F1-Pad1_ VDD 500mA
+C13 GND VCC 100nF
+C11 GND VCC 100nF
+C9 GND VCC 100nF
+C7 GND VCC 100nF
+C15 GND VCC 100nF
+C5 GND VCC 100nF
+K1 Net-_J1-Pad4_ NC_43 Net-_J1-Pad3_ Net-_J1-Pad2_ NC_44 Net-_J1-Pad1_ Net-_D2-Pad2_ VDD FINDER-30.22
+D2 VDD Net-_D2-Pad2_ 1N4001
+J1 Net-_J1-Pad1_ Net-_J1-Pad2_ Net-_J1-Pad3_ Net-_J1-Pad4_ Screw_Terminal_01x04
+R5 Net-_D3-Pad2_ VDD 10k
+D3 Net-_D3-Pad1_ Net-_D3-Pad2_ LED
+U15 /Pulse-pause timer 1 de 2/P1 /Pulse-pause timer 1 de 2/P2 /Pulse-pause timer 1 de 2/P3 /Pulse-pause timer 1 de 2/P4 /Pulse-pause timer 1 de 2/P5 /Pulse-pause timer 1 de 2/P6 /Pulse-pause timer 1 de 2/P7 /Pulse-pause timer 1 de 2/P8 VCC GND NC_45 Net-_J3-Pad5_ Net-_J3-Pad3_ NC_46 GND GND GND /Pulse-pause timer 1 de 2/RESET NC_47 NC_48 GND /Pulse-pause timer 1 de 2/P10 /Pulse-pause timer 1 de 2/P11 /Pulse-pause timer 1 de 2/P12 /Pulse-pause timer 1 de 2/P13 /Pulse-pause timer 1 de 2/P14 /Pulse-pause timer 1 de 2/P15 /Pulse-pause timer 1 de 2/P16 MCP23017_SP
+U16 /Pulse-pause timer 1 de 2/U1 /Pulse-pause timer 1 de 2/U2 /Pulse-pause timer 1 de 2/U3 /Pulse-pause timer 1 de 2/U4 GND /Pulse-pause timer 1 de 2/U6 /Pulse-pause timer 1 de 2/U7 /Pulse-pause timer 1 de 2/U8 VCC GND NC_49 Net-_J3-Pad5_ Net-_J3-Pad3_ NC_50 VCC GND GND /Pulse-pause timer 1 de 2/RESET NC_51 NC_52 GND /Pulse-pause timer 1 de 2/U10 /Pulse-pause timer 1 de 2/U11 /Pulse-pause timer 1 de 2/U12 NC_53 NC_54 NC_55 NC_56 MCP23017_SP
+J3 NC_57 NC_58 Net-_J3-Pad3_ NC_59 Net-_J3-Pad5_ GND NC_60 NC_61 NC_62 NC_63 NC_64 NC_65 NC_66 NC_67 NC_68 NC_69 NC_70 NC_71 NC_72 NC_73 NC_74 NC_75 NC_76 NC_77 NC_78 NC_79 NC_80 NC_81 NC_82 NC_83 NC_84 NC_85 NC_86 NC_87 NC_88 NC_89 NC_90 NC_91 NC_92 NC_93 Raspberry_Pi_2_3
+.end

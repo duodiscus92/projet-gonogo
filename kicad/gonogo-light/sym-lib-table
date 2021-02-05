@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name DJET)(type Legacy)(uri C:/Users/Jacques/Documents/Personnel/electronique/kicad/timer/timer/DJET.lib)(options "")(descr ""))
+  (lib (name timer-light-rescue)(type Legacy)(uri ${KIPRJMOD}/timer-light-rescue.lib)(options "")(descr ""))
+)

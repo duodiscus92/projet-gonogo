@@ -1,0 +1,52 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 3
+Title "GONOGO Heavy"
+Date "2020-12-11"
+Rev "1"
+Comp "D'JET Conseil"
+Comment1 "Conception Jacques Ehrlich"
+Comment2 ""
+Comment3 ""
+Comment4 "Pibryd Hat by D'JET"
+$EndDescr
+Wire Bus Line
+	4500 3850 6850 3850
+Wire Bus Line
+	4500 4000 6850 4000
+Text Notes 7150 3500 0    50   ~ 0
+Interface Raspberry Pi (facultative)
+Text Notes 3050 3500 0    50   ~ 0
+Pulse-pause numérique
+$Sheet
+S 6850 2450 1750 2550
+U 5FD8CFD0
+F0 "Pulse-pause timer 2 de 2" 50
+F1 "timer-feuille2.sch" 50
+F2 "U[1..12]" B L 6850 3850 50 
+F3 "P[1..12]" B L 6850 4000 50 
+F4 "GND" I L 6850 2850 50 
+F5 "VDD" I L 6850 3050 50 
+$EndSheet
+Wire Wire Line
+	4500 2850 6850 2850
+Text Label 5600 2850 0    50   ~ 0
+GND
+Wire Wire Line
+	4500 3050 6850 3050
+Text Label 5600 3050 0    50   ~ 0
+VDD
+$Sheet
+S 2700 2500 1800 2550
+U 5FD61FF3
+F0 "Pulse-pause timer 1 de 2" 50
+F1 "timer-feuille1-v3.sch" 50
+F2 "U[1..12]" B R 4500 3850 50 
+F3 "P[1..12]" B R 4500 4000 50 
+F4 "GND" O R 4500 2850 50 
+F5 "VDD" O R 4500 3050 50 
+$EndSheet
+$EndSCHEMATC
