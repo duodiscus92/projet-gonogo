@@ -11,7 +11,7 @@ on peut compiler le programme :
 $ gcc gonogo-switch.c -o gonogo-switch
 
 2) Utilisation
-$ ./gonogoswitch 3600
+$ ./gonogo-switch 3600
 
 Le programme répond:
 SW1 = OFF
