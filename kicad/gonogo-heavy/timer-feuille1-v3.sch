@@ -5,8 +5,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 3 3
 Title "GONOGO Heavy"
-Date "2021-01-29"
-Rev "3"
+Date "2021-02-10"
+Rev "4"
 Comp "D'JET Conseil"
 Comment1 "Conception : Jacques Ehrlich "
 Comment2 ""
@@ -1174,10 +1174,6 @@ Wire Wire Line
 	5050 8950 5050 8900
 Wire Wire Line
 	4950 9550 4950 9650
-Wire Wire Line
-	4950 9650 2700 9650
-Wire Wire Line
-	2700 4050 2700 9650
 $Comp
 L 4xxx:4011 U1
 U 3 1 6173B69D
@@ -1210,18 +1206,11 @@ Wire Wire Line
 Wire Wire Line
 	10750 9550 10750 9650
 Wire Wire Line
-	10750 9650 8500 9650
-Wire Wire Line
 	4600 3150 5000 3150
 Wire Wire Line
 	5200 1300 5350 1300
 Wire Wire Line
 	5200 1300 5200 2200
-Wire Wire Line
-	6500 9750 6000 9750
-Wire Wire Line
-	6000 9900 6000 9750
-Connection ~ 6000 9750
 Wire Wire Line
 	6000 10200 6000 10300
 Wire Wire Line
@@ -1399,35 +1388,26 @@ Connection ~ 2700 4050
 $Comp
 L 4xxx:4011 U8
 U 1 1 600457D1
-P 5250 9750
-F 0 "U8" V 5204 9938 50  0000 L CNN
-F 1 "4011" V 5295 9938 50  0000 L CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 5250 9750 50  0001 C CNN
-F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf" H 5250 9750 50  0001 C CNN
-	1    5250 9750
-	1    0    0    -1  
+P 2700 9200
+F 0 "U8" V 2654 9388 50  0000 L CNN
+F 1 "4011" V 2745 9388 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 2700 9200 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf" H 2700 9200 50  0001 C CNN
+	1    2700 9200
+	0    -1   -1   0   
 $EndComp
 Connection ~ 4950 9650
 $Comp
 L 4xxx:4011 U8
 U 2 1 60083D9E
-P 8200 9750
-F 0 "U8" V 8154 9938 50  0000 L CNN
-F 1 "4011" V 8245 9938 50  0000 L CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 8200 9750 50  0001 C CNN
-F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf" H 8200 9750 50  0001 C CNN
-	2    8200 9750
-	-1   0    0    1   
+P 8450 9200
+F 0 "U8" V 8404 9388 50  0000 L CNN
+F 1 "4011" V 8495 9388 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 8450 9200 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf" H 8450 9200 50  0001 C CNN
+	2    8450 9200
+	0    -1   -1   0   
 $EndComp
-Connection ~ 8500 9650
-Wire Wire Line
-	7450 9750 7900 9750
-Wire Wire Line
-	5550 9750 6000 9750
-Wire Wire Line
-	4950 9850 4950 9650
-Wire Wire Line
-	8500 9850 8500 9650
 Wire Wire Line
 	5950 7800 5650 7800
 Text Label 5650 7800 0    50   ~ 0
@@ -2216,8 +2196,6 @@ F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8500 4050 8700 4050
-Wire Wire Line
 	9700 4150 9800 4150
 Wire Wire Line
 	9700 4250 9800 4250
@@ -2518,8 +2496,6 @@ Wire Wire Line
 	8850 7200 8850 6550
 Wire Wire Line
 	10850 8950 10850 8900
-Wire Wire Line
-	8500 4050 8500 9650
 $Comp
 L 4xxx:4011 U13
 U 3 1 60233125
@@ -2584,8 +2560,6 @@ F 3 "~" H 8200 4050 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	8350 4050 8500 4050
-Wire Wire Line
 	8050 4050 7950 4050
 $Comp
 L power:GND #PWR0101
@@ -2598,7 +2572,6 @@ F 3 "" H 7950 4050 50  0001 C CNN
 	1    7950 4050
 	0    1    -1   0   
 $EndComp
-Connection ~ 8500 4050
 Wire Wire Line
 	11750 7800 11450 7800
 Text Label 11450 7800 0    50   ~ 0
@@ -2915,17 +2888,17 @@ Text Label 4350 8900 0    50   ~ 0
 &PPA1-4
 Text Label 5700 8900 0    50   ~ 0
 &PPA5-12
-Text Label 5550 9750 0    50   ~ 0
-&PPA1-12
-Text Label 7550 9750 0    50   ~ 0
-&PUA1-12
+Text Label 6050 9650 0    50   ~ 0
+~&PPA1-12
+Text Label 7550 9650 0    50   ~ 0
+~&PUA1-12
 Text Label 10150 8900 0    50   ~ 0
 &PPU1-4
 Text Label 11500 8900 0    50   ~ 0
 &PPU5-12
-Text Label 4550 9650 0    50   ~ 0
+Text Label 2700 8850 1    50   ~ 0
 RSTPA
-Text Label 10400 9650 0    50   ~ 0
+Text Label 8450 8850 1    50   ~ 0
 RSTPU
 $Comp
 L Switch:SW_DIP_x08 SW3
@@ -2962,6 +2935,42 @@ F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms
 	1    3700 2000
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	6500 9750 6500 9650
+Wire Wire Line
+	2700 4050 2700 8900
+Wire Wire Line
+	4950 9650 6000 9650
+Connection ~ 6000 9650
+Wire Wire Line
+	6000 9650 6000 9900
+Wire Wire Line
+	6000 9650 6500 9650
+Wire Wire Line
+	8350 4050 8450 4050
+Wire Wire Line
+	7450 9750 7450 9650
+Wire Wire Line
+	7450 9650 8550 9650
+Wire Wire Line
+	8450 4050 8450 8900
+Connection ~ 8450 4050
+Wire Wire Line
+	8450 4050 8700 4050
+Wire Wire Line
+	8350 9500 8550 9500
+Wire Wire Line
+	8550 9500 8550 9650
+Connection ~ 8550 9500
+Connection ~ 8550 9650
+Wire Wire Line
+	8550 9650 10750 9650
+Wire Wire Line
+	2600 9500 2800 9500
+Wire Wire Line
+	4950 9650 2800 9650
+Wire Wire Line
+	2800 9650 2800 9500
 Wire Bus Line
 	5950 5400 6700 5400
 Wire Bus Line
@@ -2978,4 +2987,5 @@ Wire Bus Line
 	11750 3750 11750 5400
 Wire Bus Line
 	7500 5750 13300 5750
+Connection ~ 2800 9500
 $EndSCHEMATC

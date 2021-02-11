@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>C:\Users\Jacques\Documents\Personnel\electronique\kicad\timer\timer\timer-toplevel.sch</source>
-    <date>14/01/2021 22:04:39</date>
+    <source>C:\Users\Jacques\Documents\Personnel\electronique\projet-gonogo\kicad\gonogo-heavy\timer-toplevel.sch</source>
+    <date>08/02/2021 05:31:34</date>
     <tool>Eeschema (5.1.8)-1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
-        <title>Pulse-pause timer</title>
+        <title>GONOGO Heavy</title>
         <company>D'JET Conseil</company>
         <rev>1</rev>
         <date>2020-12-11</date>
@@ -19,7 +19,7 @@
     </sheet>
     <sheet number="2" name="/Pulse-pause timer 2 de 2/" tstamps="/5FD8CFD0/">
       <title_block>
-        <title>Pulse-pause timer - extension Raspberry Pi</title>
+        <title>GONOGO Heavy</title>
         <company>D'JET Conseil</company>
         <rev>1</rev>
         <date>2020-12-11</date>
@@ -32,22 +32,22 @@
     </sheet>
     <sheet number="3" name="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/">
       <title_block>
-        <title>Pulse-pause timer</title>
+        <title>GONOGO Heavy</title>
         <company>D'JET Conseil</company>
-        <rev>1</rev>
-        <date>2020-12-10</date>
+        <rev>3</rev>
+        <date>2021-01-29</date>
         <source>timer-feuille1-v3.sch</source>
         <comment number="1" value="Conception : Jacques Ehrlich "/>
         <comment number="2" value=""/>
         <comment number="3" value=""/>
-        <comment number="4" value="Pibryd Hat by D'JET"/>
+        <comment number="4" value="Pybrid Hat by D'JET Lab"/>
       </title_block>
     </sheet>
   </design>
   <components>
-    <comp ref="U31">
+    <comp ref="U21">
       <value>MCP23017_SP</value>
-      <footprint>Package_DIP:DIP-28_W7.62mm</footprint>
+      <footprint>Package_DIP:DIP-28_W7.62mm_Socket</footprint>
       <datasheet>http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf</datasheet>
       <libsource lib="Interface_Expansion" part="MCP23017_SP" description="16-bit I/O expander, I2C, interrupts, w pull-ups, SPDIP-28"/>
       <sheetpath names="/Pulse-pause timer 2 de 2/" tstamps="/5FD8CFD0/"/>
@@ -55,6 +55,7 @@
     </comp>
     <comp ref="C24">
       <value>100nF</value>
+      <footprint>Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Pulse-pause timer 2 de 2/" tstamps="/5FD8CFD0/"/>
@@ -62,14 +63,15 @@
     </comp>
     <comp ref="C23">
       <value>100nF</value>
+      <footprint>Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Pulse-pause timer 2 de 2/" tstamps="/5FD8CFD0/"/>
       <tstamp>5FF0F0BD</tstamp>
     </comp>
-    <comp ref="U30">
+    <comp ref="U20">
       <value>MCP23017_SP</value>
-      <footprint>Package_DIP:DIP-28_W7.62mm</footprint>
+      <footprint>Package_DIP:DIP-28_W7.62mm_Socket</footprint>
       <datasheet>http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf</datasheet>
       <libsource lib="Interface_Expansion" part="MCP23017_SP" description="16-bit I/O expander, I2C, interrupts, w pull-ups, SPDIP-28"/>
       <sheetpath names="/Pulse-pause timer 2 de 2/" tstamps="/5FD8CFD0/"/>
@@ -77,6 +79,7 @@
     </comp>
     <comp ref="J3">
       <value>Raspberry_Pi_2_3</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical</footprint>
       <datasheet>https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf</datasheet>
       <libsource lib="Connector" part="Raspberry_Pi_2_3" description="expansion header for Raspberry Pi 2 &amp; 3"/>
       <sheetpath names="/Pulse-pause timer 2 de 2/" tstamps="/5FD8CFD0/"/>
@@ -84,6 +87,7 @@
     </comp>
     <comp ref="JP31">
       <value>Jumper_NC_Dual</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="Jumper_NC_Dual" description="Dual jumper, normally closed"/>
       <sheetpath names="/Pulse-pause timer 2 de 2/" tstamps="/5FD8CFD0/"/>
@@ -91,6 +95,7 @@
     </comp>
     <comp ref="JP32">
       <value>Jumper_NC_Dual</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="Jumper_NC_Dual" description="Dual jumper, normally closed"/>
       <sheetpath names="/Pulse-pause timer 2 de 2/" tstamps="/5FD8CFD0/"/>
@@ -98,6 +103,7 @@
     </comp>
     <comp ref="JP33">
       <value>Jumper_NC_Dual</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="Jumper_NC_Dual" description="Dual jumper, normally closed"/>
       <sheetpath names="/Pulse-pause timer 2 de 2/" tstamps="/5FD8CFD0/"/>
@@ -105,6 +111,7 @@
     </comp>
     <comp ref="JP34">
       <value>Jumper_NC_Dual</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="Jumper_NC_Dual" description="Dual jumper, normally closed"/>
       <sheetpath names="/Pulse-pause timer 2 de 2/" tstamps="/5FD8CFD0/"/>
@@ -112,6 +119,7 @@
     </comp>
     <comp ref="JP35">
       <value>Jumper_NC_Dual</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="Jumper_NC_Dual" description="Dual jumper, normally closed"/>
       <sheetpath names="/Pulse-pause timer 2 de 2/" tstamps="/5FD8CFD0/"/>
@@ -119,36 +127,47 @@
     </comp>
     <comp ref="JP36">
       <value>Jumper_NC_Dual</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="Jumper_NC_Dual" description="Dual jumper, normally closed"/>
       <sheetpath names="/Pulse-pause timer 2 de 2/" tstamps="/5FD8CFD0/"/>
       <tstamp>5FFDAB0D</tstamp>
     </comp>
     <comp ref="RN2">
-      <value>10k</value>
-      <footprint>Resistor_THT:R_Array_SIP13</footprint>
+      <value>R_Network08</value>
+      <footprint>Resistor_THT:R_Array_SIP9</footprint>
       <datasheet>http://www.vishay.com/docs/31509/csc.pdf</datasheet>
-      <libsource lib="Device" part="R_Network12" description="12 resistor network, star topology, bussed resistors, small symbol"/>
+      <libsource lib="Device" part="R_Network08" description="8 resistor network, star topology, bussed resistors, small symbol"/>
       <sheetpath names="/Pulse-pause timer 2 de 2/" tstamps="/5FD8CFD0/"/>
-      <tstamp>60033FBA</tstamp>
+      <tstamp>605E534A</tstamp>
     </comp>
     <comp ref="RN1">
-      <value>10k</value>
-      <footprint>Resistor_THT:R_Array_SIP13</footprint>
+      <value>R_Network04</value>
+      <footprint>Resistor_THT:R_Array_SIP5</footprint>
       <datasheet>http://www.vishay.com/docs/31509/csc.pdf</datasheet>
-      <libsource lib="Device" part="R_Network12" description="12 resistor network, star topology, bussed resistors, small symbol"/>
+      <libsource lib="Device" part="R_Network04" description="4 resistor network, star topology, bussed resistors, small symbol"/>
       <sheetpath names="/Pulse-pause timer 2 de 2/" tstamps="/5FD8CFD0/"/>
-      <tstamp>6004C5D2</tstamp>
+      <tstamp>605E6409</tstamp>
     </comp>
-    <comp ref="U4">
-      <value>4012</value>
-      <datasheet>http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf</datasheet>
-      <libsource lib="DJET" part="4060-djet" description="14 Stage Biary Counter/Oscillator"/>
-      <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
-      <tstamp>5FE8E8A5</tstamp>
+    <comp ref="RN4">
+      <value>R_Network08</value>
+      <footprint>Resistor_THT:R_Array_SIP9</footprint>
+      <datasheet>http://www.vishay.com/docs/31509/csc.pdf</datasheet>
+      <libsource lib="Device" part="R_Network08" description="8 resistor network, star topology, bussed resistors, small symbol"/>
+      <sheetpath names="/Pulse-pause timer 2 de 2/" tstamps="/5FD8CFD0/"/>
+      <tstamp>605FF92B</tstamp>
+    </comp>
+    <comp ref="RN3">
+      <value>R_Network04</value>
+      <footprint>Resistor_THT:R_Array_SIP5</footprint>
+      <datasheet>http://www.vishay.com/docs/31509/csc.pdf</datasheet>
+      <libsource lib="Device" part="R_Network04" description="4 resistor network, star topology, bussed resistors, small symbol"/>
+      <sheetpath names="/Pulse-pause timer 2 de 2/" tstamps="/5FD8CFD0/"/>
+      <tstamp>605FFC23</tstamp>
     </comp>
     <comp ref="Y1">
       <value>32,768 kHz</value>
+      <footprint>Crystal:Crystal_C26-LF_D2.1mm_L6.5mm_Vertical</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="Crystal" description="Two pin crystal"/>
       <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
@@ -156,6 +175,7 @@
     </comp>
     <comp ref="R1">
       <value>2,2M</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
@@ -163,6 +183,7 @@
     </comp>
     <comp ref="C1">
       <value>220pF</value>
+      <footprint>Capacitor_THT:C_Rect_L7.2mm_W4.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
@@ -170,17 +191,11 @@
     </comp>
     <comp ref="C2">
       <value>220pF</value>
+      <footprint>Capacitor_THT:C_Rect_L7.2mm_W4.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
       <tstamp>5FEA3966</tstamp>
-    </comp>
-    <comp ref="U7">
-      <value>4013</value>
-      <datasheet>http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf</datasheet>
-      <libsource lib="4xxx" part="4013" description="Dual D  FlipFlop, Set &amp; reset"/>
-      <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
-      <tstamp>5FEFDB3B</tstamp>
     </comp>
     <comp ref="Q1">
       <value>2N2222</value>
@@ -192,6 +207,7 @@
     </comp>
     <comp ref="R2">
       <value>33K</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
@@ -199,6 +215,7 @@
     </comp>
     <comp ref="J1">
       <value>Screw_Terminal_01x02</value>
+      <footprint>TerminalBlock:TerminalBlock_bornier-2_P5.08mm</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Connector" part="Screw_Terminal_01x02" description="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
@@ -206,6 +223,7 @@
     </comp>
     <comp ref="C14">
       <value>100nF</value>
+      <footprint>Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
@@ -213,6 +231,7 @@
     </comp>
     <comp ref="C12">
       <value>100nF</value>
+      <footprint>Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
@@ -220,6 +239,7 @@
     </comp>
     <comp ref="C10">
       <value>100nF</value>
+      <footprint>Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
@@ -227,6 +247,7 @@
     </comp>
     <comp ref="C8">
       <value>100nF</value>
+      <footprint>Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
@@ -234,6 +255,7 @@
     </comp>
     <comp ref="C16">
       <value>100nF</value>
+      <footprint>Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
@@ -241,20 +263,15 @@
     </comp>
     <comp ref="C6">
       <value>100nF</value>
+      <footprint>Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
       <tstamp>6105FB01</tstamp>
     </comp>
-    <comp ref="F1">
-      <value>500mA</value>
-      <datasheet>~</datasheet>
-      <libsource lib="Device" part="Fuse" description="Fuse"/>
-      <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
-      <tstamp>60D684D7</tstamp>
-    </comp>
     <comp ref="C15">
       <value>100nF</value>
+      <footprint>Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
@@ -262,6 +279,7 @@
     </comp>
     <comp ref="C13">
       <value>100nF</value>
+      <footprint>Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
@@ -269,6 +287,7 @@
     </comp>
     <comp ref="C11">
       <value>100nF</value>
+      <footprint>Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
@@ -276,6 +295,7 @@
     </comp>
     <comp ref="C9">
       <value>100nF</value>
+      <footprint>Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
@@ -283,6 +303,7 @@
     </comp>
     <comp ref="C17">
       <value>100nF</value>
+      <footprint>Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
@@ -290,6 +311,7 @@
     </comp>
     <comp ref="C7">
       <value>100nF</value>
+      <footprint>Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
@@ -313,6 +335,7 @@
     </comp>
     <comp ref="J2">
       <value>Screw_Terminal_01x04</value>
+      <footprint>TerminalBlock:TerminalBlock_bornier-4_P5.08mm</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Connector" part="Screw_Terminal_01x04" description="Generic screw terminal, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
@@ -320,6 +343,7 @@
     </comp>
     <comp ref="R4">
       <value>10k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
@@ -327,6 +351,7 @@
     </comp>
     <comp ref="D1">
       <value>LED</value>
+      <footprint>LED_THT:LED_D5.0mm</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
@@ -334,20 +359,15 @@
     </comp>
     <comp ref="U9">
       <value>4040</value>
+      <footprint>Package_DIP:DIP-16_W7.62mm_Socket</footprint>
       <datasheet>http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf</datasheet>
       <libsource lib="4xxx" part="4040" description="Binary Counter 12 stages (Asynchronous)"/>
       <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
       <tstamp>60009D04</tstamp>
     </comp>
-    <comp ref="U12">
-      <value>4012</value>
-      <datasheet>http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf</datasheet>
-      <libsource lib="4xxx" part="4012" description="Dual 4 inputs Nand"/>
-      <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
-      <tstamp>60094AEF</tstamp>
-    </comp>
     <comp ref="JP1">
       <value>Jumper_NC_Dual</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="Jumper_NC_Dual" description="Dual jumper, normally closed"/>
       <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
@@ -355,6 +375,7 @@
     </comp>
     <comp ref="JP2">
       <value>Jumper_NC_Dual</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="Jumper_NC_Dual" description="Dual jumper, normally closed"/>
       <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
@@ -362,6 +383,7 @@
     </comp>
     <comp ref="U8">
       <value>4011</value>
+      <footprint>Package_DIP:DIP-14_W7.62mm_Socket</footprint>
       <datasheet>http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf</datasheet>
       <libsource lib="4xxx" part="4011" description="Quad Nand 2 inputs"/>
       <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
@@ -369,6 +391,7 @@
     </comp>
     <comp ref="C4">
       <value>100nF</value>
+      <footprint>Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
@@ -376,6 +399,7 @@
     </comp>
     <comp ref="C18">
       <value>100nF</value>
+      <footprint>Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
@@ -383,70 +407,31 @@
     </comp>
     <comp ref="C19">
       <value>100nF</value>
+      <footprint>Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
       <tstamp>6050AC9D</tstamp>
     </comp>
-    <comp ref="C20">
-      <value>100nF</value>
-      <datasheet>~</datasheet>
-      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
-      <tstamp>60598BA3</tstamp>
-    </comp>
-    <comp ref="C21">
-      <value>100nF</value>
-      <datasheet>~</datasheet>
-      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
-      <tstamp>60599009</tstamp>
-    </comp>
-    <comp ref="C22">
-      <value>100nF</value>
-      <datasheet>~</datasheet>
-      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
-      <tstamp>60707B5A</tstamp>
-    </comp>
-    <comp ref="U11">
-      <value>4012</value>
-      <datasheet>http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf</datasheet>
-      <libsource lib="4xxx" part="4012" description="Dual 4 inputs Nand"/>
-      <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
-      <tstamp>60825162</tstamp>
-    </comp>
     <comp ref="U1">
       <value>4011</value>
+      <footprint>Package_DIP:DIP-14_W7.62mm_Socket</footprint>
       <datasheet>http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf</datasheet>
       <libsource lib="4xxx" part="4011" description="Quad Nand 2 inputs"/>
       <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
       <tstamp>60927D3A</tstamp>
     </comp>
-    <comp ref="SW1">
-      <value>SW_DIP_x12</value>
-      <datasheet>~</datasheet>
-      <libsource lib="Switch" part="SW_DIP_x12" description="12x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"/>
-      <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
-      <tstamp>60A62B3F</tstamp>
-    </comp>
     <comp ref="U3">
       <value>4040</value>
+      <footprint>Package_DIP:DIP-16_W7.62mm_Socket</footprint>
       <datasheet>http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf</datasheet>
       <libsource lib="4xxx" part="4040" description="Binary Counter 12 stages (Asynchronous)"/>
       <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
       <tstamp>60061128</tstamp>
     </comp>
-    <comp ref="RN3">
-      <value>10k</value>
-      <footprint>Resistor_THT:R_Array_SIP13</footprint>
-      <datasheet>http://www.vishay.com/docs/31509/csc.pdf</datasheet>
-      <libsource lib="Device" part="R_Network12" description="12 resistor network, star topology, bussed resistors, small symbol"/>
-      <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
-      <tstamp>60D3015B</tstamp>
-    </comp>
-    <comp ref="U2">
+    <comp ref="U10">
       <value>4071</value>
+      <footprint>Package_DIP:DIP-14_W7.62mm_Socket</footprint>
       <datasheet>http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf</datasheet>
       <libsource lib="4xxx" part="4071" description="Quad Or 2 inputs"/>
       <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
@@ -454,91 +439,31 @@
     </comp>
     <comp ref="U6">
       <value>4071</value>
+      <footprint>Package_DIP:DIP-14_W7.62mm_Socket</footprint>
       <datasheet>http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf</datasheet>
       <libsource lib="4xxx" part="4071" description="Quad Or 2 inputs"/>
       <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
       <tstamp>60F15027</tstamp>
     </comp>
-    <comp ref="U10">
+    <comp ref="U2">
       <value>4071</value>
+      <footprint>Package_DIP:DIP-14_W7.62mm_Socket</footprint>
       <datasheet>http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf</datasheet>
       <libsource lib="4xxx" part="4071" description="Quad Or 2 inputs"/>
       <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
-      <tstamp>60F199A4</tstamp>
+      <tstamp>60F16FC6</tstamp>
     </comp>
-    <comp ref="U5">
-      <value>4068</value>
-      <datasheet>http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf</datasheet>
-      <libsource lib="4xxx_IEEE" part="4068" description="CMOS 8-input NAND/AND Gate"/>
-      <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
-      <tstamp>615F5A6D</tstamp>
-    </comp>
-    <comp ref="U19">
+    <comp ref="U11">
       <value>4012</value>
+      <footprint>Package_DIP:DIP-14_W7.62mm_Socket</footprint>
       <datasheet>http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf</datasheet>
       <libsource lib="4xxx" part="4012" description="Dual 4 inputs Nand"/>
       <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
-      <tstamp>61845056</tstamp>
-    </comp>
-    <comp ref="U13">
-      <value>4011</value>
-      <datasheet>http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf</datasheet>
-      <libsource lib="4xxx" part="4011" description="Quad Nand 2 inputs"/>
-      <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
-      <tstamp>6184506A</tstamp>
-    </comp>
-    <comp ref="SW2">
-      <value>SW_DIP_x12</value>
-      <datasheet>~</datasheet>
-      <libsource lib="Switch" part="SW_DIP_x12" description="12x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"/>
-      <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
-      <tstamp>61845077</tstamp>
-    </comp>
-    <comp ref="U15">
-      <value>4040</value>
-      <datasheet>http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf</datasheet>
-      <libsource lib="4xxx" part="4040" description="Binary Counter 12 stages (Asynchronous)"/>
-      <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
-      <tstamp>6184509C</tstamp>
-    </comp>
-    <comp ref="RN4">
-      <value>10k</value>
-      <footprint>Resistor_THT:R_Array_SIP13</footprint>
-      <datasheet>http://www.vishay.com/docs/31509/csc.pdf</datasheet>
-      <libsource lib="Device" part="R_Network12" description="12 resistor network, star topology, bussed resistors, small symbol"/>
-      <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
-      <tstamp>618450A9</tstamp>
-    </comp>
-    <comp ref="U14">
-      <value>4071</value>
-      <datasheet>http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf</datasheet>
-      <libsource lib="4xxx" part="4071" description="Quad Or 2 inputs"/>
-      <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
-      <tstamp>618450DE</tstamp>
-    </comp>
-    <comp ref="U17">
-      <value>4071</value>
-      <datasheet>http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf</datasheet>
-      <libsource lib="4xxx" part="4071" description="Quad Or 2 inputs"/>
-      <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
-      <tstamp>61845106</tstamp>
-    </comp>
-    <comp ref="U18">
-      <value>4071</value>
-      <datasheet>http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf</datasheet>
-      <libsource lib="4xxx" part="4071" description="Quad Or 2 inputs"/>
-      <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
-      <tstamp>6184512E</tstamp>
-    </comp>
-    <comp ref="U16">
-      <value>4068</value>
-      <datasheet>http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf</datasheet>
-      <libsource lib="4xxx_IEEE" part="4068" description="CMOS 8-input NAND/AND Gate"/>
-      <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
-      <tstamp>618451AD</tstamp>
+      <tstamp>6019F2E5</tstamp>
     </comp>
     <comp ref="2A1">
       <value>Fuse_Small</value>
+      <footprint>Fuse:Fuseholder_TR5_Littelfuse_No560_No460</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="Fuse_Small" description="Fuse, small symbol"/>
       <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
@@ -546,6 +471,7 @@
     </comp>
     <comp ref="2A2">
       <value>Fuse_Small</value>
+      <footprint>Fuse:Fuseholder_TR5_Littelfuse_No560_No460</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="Fuse_Small" description="Fuse, small symbol"/>
       <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
@@ -553,6 +479,7 @@
     </comp>
     <comp ref="R3">
       <value>33K</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
@@ -568,17 +495,235 @@
     </comp>
     <comp ref="C3">
       <value>100nF</value>
+      <footprint>Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
       <tstamp>60408ADD</tstamp>
     </comp>
-    <comp ref="C5">
+    <comp ref="C20">
       <value>100nF</value>
+      <footprint>Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
-      <tstamp>60445C7C</tstamp>
+      <tstamp>60598BA3</tstamp>
+    </comp>
+    <comp ref="C21">
+      <value>100nF</value>
+      <footprint>Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
+      <tstamp>60599009</tstamp>
+    </comp>
+    <comp ref="C22">
+      <value>100nF</value>
+      <footprint>Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
+      <tstamp>60707B5A</tstamp>
+    </comp>
+    <comp ref="C25">
+      <value>100nF</value>
+      <footprint>Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
+      <tstamp>60528802</tstamp>
+    </comp>
+    <comp ref="C26">
+      <value>100nF</value>
+      <footprint>Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
+      <tstamp>60528CDE</tstamp>
+    </comp>
+    <comp ref="C27">
+      <value>220uF/16v</value>
+      <footprint>Capacitor_THT:CP_Radial_D10.0mm_P5.00mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="CP" description="Polarized capacitor"/>
+      <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
+      <tstamp>6005FC80</tstamp>
+    </comp>
+    <comp ref="F1">
+      <value>1,1A PTC</value>
+      <footprint>Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Polyfuse_Small" description="Resettable fuse, polymeric positive temperature coefficient, small symbol"/>
+      <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
+      <tstamp>6009B4D6</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>MUR240</value>
+      <footprint>Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
+      <tstamp>6012B526</tstamp>
+    </comp>
+    <comp ref="SW1">
+      <value>SW_DIP_x08</value>
+      <footprint>Package_DIP:DIP-16_W7.62mm_Socket</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Switch" part="SW_DIP_x08" description="8x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"/>
+      <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
+      <tstamp>600F8554</tstamp>
+    </comp>
+    <comp ref="SW2">
+      <value>SW_DIP_x04</value>
+      <footprint>Package_DIP:DIP-8_W7.62mm_Socket</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Switch" part="SW_DIP_x04" description="4x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"/>
+      <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
+      <tstamp>600FBF85</tstamp>
+    </comp>
+    <comp ref="RN6">
+      <value>R_Network04</value>
+      <footprint>Resistor_THT:R_Array_SIP5</footprint>
+      <datasheet>http://www.vishay.com/docs/31509/csc.pdf</datasheet>
+      <libsource lib="Device" part="R_Network04" description="4 resistor network, star topology, bussed resistors, small symbol"/>
+      <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
+      <tstamp>6052ABF8</tstamp>
+    </comp>
+    <comp ref="RN5">
+      <value>R_Network08</value>
+      <footprint>Resistor_THT:R_Array_SIP9</footprint>
+      <datasheet>http://www.vishay.com/docs/31509/csc.pdf</datasheet>
+      <libsource lib="Device" part="R_Network08" description="8 resistor network, star topology, bussed resistors, small symbol"/>
+      <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
+      <tstamp>6052FA41</tstamp>
+    </comp>
+    <comp ref="U7">
+      <value>4013</value>
+      <footprint>Package_DIP:DIP-14_W7.62mm_Socket</footprint>
+      <datasheet>http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf</datasheet>
+      <libsource lib="4xxx" part="4013" description="Dual D  FlipFlop, Set &amp; reset"/>
+      <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
+      <tstamp>5FEFDB3B</tstamp>
+    </comp>
+    <comp ref="U12">
+      <value>4012</value>
+      <footprint>Package_DIP:DIP-14_W7.62mm_Socket</footprint>
+      <datasheet>http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf</datasheet>
+      <libsource lib="4xxx" part="4012" description="Dual 4 inputs Nand"/>
+      <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
+      <tstamp>60039197</tstamp>
+    </comp>
+    <comp ref="U13">
+      <value>4011</value>
+      <footprint>Package_DIP:DIP-14_W7.62mm_Socket</footprint>
+      <datasheet>http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf</datasheet>
+      <libsource lib="4xxx" part="4011" description="Quad Nand 2 inputs"/>
+      <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
+      <tstamp>60114A2B</tstamp>
+    </comp>
+    <comp ref="U14">
+      <value>4071</value>
+      <footprint>Package_DIP:DIP-14_W7.62mm_Socket</footprint>
+      <datasheet>http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf</datasheet>
+      <libsource lib="4xxx" part="4071" description="Quad Or 2 inputs"/>
+      <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
+      <tstamp>603344D9</tstamp>
+    </comp>
+    <comp ref="U17">
+      <value>4071</value>
+      <footprint>Package_DIP:DIP-14_W7.62mm_Socket</footprint>
+      <datasheet>http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf</datasheet>
+      <libsource lib="4xxx" part="4071" description="Quad Or 2 inputs"/>
+      <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
+      <tstamp>6033648D</tstamp>
+    </comp>
+    <comp ref="U18">
+      <value>4071</value>
+      <footprint>Package_DIP:DIP-14_W7.62mm_Socket</footprint>
+      <datasheet>http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf</datasheet>
+      <libsource lib="4xxx" part="4071" description="Quad Or 2 inputs"/>
+      <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
+      <tstamp>60336497</tstamp>
+    </comp>
+    <comp ref="U19">
+      <value>4012</value>
+      <footprint>Package_DIP:DIP-14_W7.62mm_Socket</footprint>
+      <datasheet>http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf</datasheet>
+      <libsource lib="4xxx" part="4012" description="Dual 4 inputs Nand"/>
+      <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
+      <tstamp>604924B9</tstamp>
+    </comp>
+    <comp ref="U5">
+      <value>4068</value>
+      <footprint>Package_DIP:DIP-14_W7.62mm_Socket</footprint>
+      <datasheet>http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf</datasheet>
+      <libsource lib="4xxx_IEEE" part="4068" description="CMOS 8-input NAND/AND Gate"/>
+      <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
+      <tstamp>615F5A6D</tstamp>
+    </comp>
+    <comp ref="U15">
+      <value>4040</value>
+      <footprint>Package_DIP:DIP-16_W7.62mm_Socket</footprint>
+      <datasheet>http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf</datasheet>
+      <libsource lib="4xxx" part="4040" description="Binary Counter 12 stages (Asynchronous)"/>
+      <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
+      <tstamp>6023305E</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>100nF</value>
+      <footprint>Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
+      <tstamp>60233151</tstamp>
+    </comp>
+    <comp ref="RN8">
+      <value>R_Network04</value>
+      <footprint>Resistor_THT:R_Array_SIP5</footprint>
+      <datasheet>http://www.vishay.com/docs/31509/csc.pdf</datasheet>
+      <libsource lib="Device" part="R_Network04" description="4 resistor network, star topology, bussed resistors, small symbol"/>
+      <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
+      <tstamp>6023318A</tstamp>
+    </comp>
+    <comp ref="RN7">
+      <value>R_Network08</value>
+      <footprint>Resistor_THT:R_Array_SIP9</footprint>
+      <datasheet>http://www.vishay.com/docs/31509/csc.pdf</datasheet>
+      <libsource lib="Device" part="R_Network08" description="8 resistor network, star topology, bussed resistors, small symbol"/>
+      <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
+      <tstamp>60233194</tstamp>
+    </comp>
+    <comp ref="U16">
+      <value>4068</value>
+      <footprint>Package_DIP:DIP-14_W7.62mm_Socket</footprint>
+      <datasheet>http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf</datasheet>
+      <libsource lib="4xxx_IEEE" part="4068" description="CMOS 8-input NAND/AND Gate"/>
+      <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
+      <tstamp>602331CB</tstamp>
+    </comp>
+    <comp ref="SW3">
+      <value>SW_DIP_x08</value>
+      <footprint>Package_DIP:DIP-16_W7.62mm_Socket</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Switch" part="SW_DIP_x08" description="8x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"/>
+      <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
+      <tstamp>60233176</tstamp>
+    </comp>
+    <comp ref="SW4">
+      <value>SW_DIP_x04</value>
+      <footprint>Package_DIP:DIP-8_W7.62mm_Socket</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Switch" part="SW_DIP_x04" description="4x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"/>
+      <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
+      <tstamp>60233180</tstamp>
+    </comp>
+    <comp ref="U4">
+      <value>4060</value>
+      <footprint>Package_DIP:DIP-16_W7.62mm_Socket</footprint>
+      <datasheet>http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf</datasheet>
+      <libsource lib="DJET" part="4060-djet" description="14 Stage Biary Counter/Oscillator"/>
+      <sheetpath names="/Pulse-pause timer 1 de 2/" tstamps="/5FD61FF3/"/>
+      <tstamp>5FE8E8A5</tstamp>
     </comp>
   </components>
   <libparts>
@@ -867,6 +1012,21 @@
         <pin num="2" name="~" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="Device" part="CP">
+      <description>Polarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
     <libpart lib="Device" part="Crystal">
       <description>Two pin crystal</description>
       <docs>~</docs>
@@ -882,19 +1042,22 @@
         <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="Device" part="Fuse">
-      <description>Fuse</description>
+    <libpart lib="Device" part="D_Small">
+      <description>Diode, small symbol</description>
       <docs>~</docs>
       <footprints>
-        <fp>*Fuse*</fp>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
       </footprints>
       <fields>
-        <field name="Reference">F</field>
-        <field name="Value">Fuse</field>
+        <field name="Reference">D</field>
+        <field name="Value">D_Small</field>
       </fields>
       <pins>
-        <pin num="1" name="~" type="passive"/>
-        <pin num="2" name="~" type="passive"/>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Device" part="Fuse_Small">
@@ -948,6 +1111,22 @@
         <pin num="2" name="A" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="Device" part="Polyfuse_Small">
+      <description>Resettable fuse, polymeric positive temperature coefficient, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>*polyfuse*</fp>
+        <fp>*PTC*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">F</field>
+        <field name="Value">Polyfuse_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
     <libpart lib="Device" part="R">
       <description>Resistor</description>
       <docs>~</docs>
@@ -963,16 +1142,35 @@
         <pin num="2" name="~" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="Device" part="R_Network12">
-      <description>12 resistor network, star topology, bussed resistors, small symbol</description>
+    <libpart lib="Device" part="R_Network04">
+      <description>4 resistor network, star topology, bussed resistors, small symbol</description>
       <docs>http://www.vishay.com/docs/31509/csc.pdf</docs>
       <footprints>
         <fp>R?Array?SIP*</fp>
       </footprints>
       <fields>
         <field name="Reference">RN</field>
-        <field name="Value">R_Network12</field>
-        <field name="Footprint">Resistor_THT:R_Array_SIP13</field>
+        <field name="Value">R_Network04</field>
+        <field name="Footprint">Resistor_THT:R_Array_SIP5</field>
+      </fields>
+      <pins>
+        <pin num="1" name="common" type="passive"/>
+        <pin num="2" name="R1" type="passive"/>
+        <pin num="3" name="R2" type="passive"/>
+        <pin num="4" name="R3" type="passive"/>
+        <pin num="5" name="R4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_Network08">
+      <description>8 resistor network, star topology, bussed resistors, small symbol</description>
+      <docs>http://www.vishay.com/docs/31509/csc.pdf</docs>
+      <footprints>
+        <fp>R?Array?SIP*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">RN</field>
+        <field name="Value">R_Network08</field>
+        <field name="Footprint">Resistor_THT:R_Array_SIP9</field>
       </fields>
       <pins>
         <pin num="1" name="common" type="passive"/>
@@ -984,10 +1182,6 @@
         <pin num="7" name="R6" type="passive"/>
         <pin num="8" name="R7" type="passive"/>
         <pin num="9" name="R8" type="passive"/>
-        <pin num="10" name="R9" type="passive"/>
-        <pin num="11" name="R10" type="passive"/>
-        <pin num="12" name="R11" type="passive"/>
-        <pin num="13" name="R12" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Diode" part="1N4001">
@@ -1081,15 +1275,36 @@
         <pin num="A2" name="~" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="Switch" part="SW_DIP_x12">
-      <description>12x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol</description>
+    <libpart lib="Switch" part="SW_DIP_x04">
+      <description>4x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol</description>
       <docs>~</docs>
       <footprints>
-        <fp>SW?DIP?x12*</fp>
+        <fp>SW?DIP?x4*</fp>
       </footprints>
       <fields>
         <field name="Reference">SW</field>
-        <field name="Value">SW_DIP_x12</field>
+        <field name="Value">SW_DIP_x04</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+        <pin num="4" name="~" type="passive"/>
+        <pin num="5" name="~" type="passive"/>
+        <pin num="6" name="~" type="passive"/>
+        <pin num="7" name="~" type="passive"/>
+        <pin num="8" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_DIP_x08">
+      <description>8x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>SW?DIP?x8*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_DIP_x08</field>
       </fields>
       <pins>
         <pin num="1" name="~" type="passive"/>
@@ -1108,14 +1323,6 @@
         <pin num="14" name="~" type="passive"/>
         <pin num="15" name="~" type="passive"/>
         <pin num="16" name="~" type="passive"/>
-        <pin num="17" name="~" type="passive"/>
-        <pin num="18" name="~" type="passive"/>
-        <pin num="19" name="~" type="passive"/>
-        <pin num="20" name="~" type="passive"/>
-        <pin num="21" name="~" type="passive"/>
-        <pin num="22" name="~" type="passive"/>
-        <pin num="23" name="~" type="passive"/>
-        <pin num="24" name="~" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Transistor_BJT" part="BC107">
@@ -1151,7 +1358,7 @@
       <uri>C:\Program Files\KiCad\share\kicad\library/Connector.lib</uri>
     </library>
     <library logical="DJET">
-      <uri>C:\Users\Jacques\Documents\Personnel\electronique\kicad\timer\timer/DJET.lib</uri>
+      <uri>C:\Users\Jacques\Documents\Personnel\electronique\projet-gonogo\kicad\gonogo-heavy/DJET.lib</uri>
     </library>
     <library logical="Device">
       <uri>C:\Program Files\KiCad\share\kicad\library/Device.lib</uri>
@@ -1174,1006 +1381,1044 @@
   </libraries>
   <nets>
     <net code="1" name="GND">
-      <node ref="C14" pin="1"/>
-      <node ref="J1" pin="2"/>
-      <node ref="Q1" pin="1"/>
-      <node ref="U4" pin="8"/>
-      <node ref="C5" pin="1"/>
-      <node ref="C18" pin="1"/>
-      <node ref="C22" pin="1"/>
-      <node ref="C4" pin="1"/>
-      <node ref="C13" pin="1"/>
+      <node ref="U5" pin="7"/>
+      <node ref="U3" pin="8"/>
+      <node ref="U9" pin="8"/>
+      <node ref="C19" pin="1"/>
       <node ref="Q2" pin="1"/>
-      <node ref="U15" pin="8"/>
-      <node ref="U16" pin="7"/>
-      <node ref="C15" pin="1"/>
-      <node ref="C6" pin="1"/>
-      <node ref="C16" pin="1"/>
-      <node ref="C12" pin="1"/>
+      <node ref="U7" pin="8"/>
+      <node ref="U7" pin="9"/>
+      <node ref="U1" pin="7"/>
+      <node ref="U7" pin="7"/>
+      <node ref="C4" pin="1"/>
+      <node ref="C18" pin="1"/>
+      <node ref="U12" pin="7"/>
+      <node ref="C20" pin="1"/>
+      <node ref="C5" pin="1"/>
+      <node ref="C11" pin="1"/>
+      <node ref="Q1" pin="1"/>
+      <node ref="C1" pin="2"/>
+      <node ref="C2" pin="2"/>
       <node ref="C17" pin="1"/>
       <node ref="C7" pin="1"/>
-      <node ref="C11" pin="1"/>
-      <node ref="C9" pin="1"/>
-      <node ref="C8" pin="1"/>
-      <node ref="C10" pin="1"/>
-      <node ref="U7" pin="4"/>
-      <node ref="C3" pin="1"/>
-      <node ref="U4" pin="12"/>
-      <node ref="U7" pin="6"/>
-      <node ref="C1" pin="2"/>
-      <node ref="U3" pin="8"/>
-      <node ref="C2" pin="2"/>
-      <node ref="RN1" pin="1"/>
-      <node ref="RN2" pin="1"/>
-      <node ref="U31" pin="10"/>
-      <node ref="U30" pin="10"/>
-      <node ref="C24" pin="2"/>
-      <node ref="C23" pin="2"/>
-      <node ref="U9" pin="8"/>
-      <node ref="U7" pin="9"/>
-      <node ref="JP36" pin="3"/>
-      <node ref="JP35" pin="3"/>
-      <node ref="JP34" pin="3"/>
-      <node ref="JP33" pin="3"/>
-      <node ref="C19" pin="1"/>
-      <node ref="J3" pin="6"/>
-      <node ref="JP32" pin="3"/>
-      <node ref="JP31" pin="3"/>
-      <node ref="U7" pin="8"/>
-      <node ref="U5" pin="7"/>
+      <node ref="C22" pin="1"/>
+      <node ref="C25" pin="1"/>
+      <node ref="C26" pin="1"/>
+      <node ref="C27" pin="2"/>
+      <node ref="C12" pin="1"/>
+      <node ref="J1" pin="2"/>
+      <node ref="C14" pin="1"/>
       <node ref="C21" pin="1"/>
-      <node ref="U7" pin="11"/>
+      <node ref="C10" pin="1"/>
+      <node ref="C9" pin="1"/>
+      <node ref="D3" pin="2"/>
+      <node ref="C16" pin="1"/>
+      <node ref="C6" pin="1"/>
+      <node ref="C8" pin="1"/>
+      <node ref="C3" pin="1"/>
+      <node ref="C15" pin="1"/>
+      <node ref="C13" pin="1"/>
+      <node ref="JP34" pin="3"/>
+      <node ref="U14" pin="7"/>
+      <node ref="U17" pin="7"/>
+      <node ref="JP35" pin="3"/>
+      <node ref="U18" pin="7"/>
+      <node ref="U15" pin="8"/>
+      <node ref="U11" pin="7"/>
+      <node ref="JP36" pin="3"/>
+      <node ref="U19" pin="7"/>
+      <node ref="U8" pin="7"/>
+      <node ref="U10" pin="7"/>
+      <node ref="RN1" pin="1"/>
+      <node ref="JP32" pin="3"/>
+      <node ref="RN4" pin="1"/>
+      <node ref="RN3" pin="1"/>
       <node ref="U7" pin="10"/>
-      <node ref="C20" pin="1"/>
+      <node ref="U7" pin="6"/>
+      <node ref="JP33" pin="3"/>
+      <node ref="U7" pin="4"/>
+      <node ref="U13" pin="7"/>
+      <node ref="U4" pin="12"/>
+      <node ref="U4" pin="8"/>
+      <node ref="C23" pin="2"/>
+      <node ref="C24" pin="2"/>
+      <node ref="U6" pin="7"/>
+      <node ref="U20" pin="10"/>
+      <node ref="U2" pin="7"/>
+      <node ref="U16" pin="7"/>
+      <node ref="RN2" pin="1"/>
+      <node ref="J3" pin="9"/>
+      <node ref="U21" pin="10"/>
+      <node ref="U7" pin="11"/>
+      <node ref="JP31" pin="3"/>
     </net>
-    <net code="2" name="Net-(U5-Pad5)">
-      <node ref="U6" pin="3"/>
-      <node ref="U5" pin="5"/>
+    <net code="2" name="Net-(SW2-Pad4)">
+      <node ref="SW2" pin="4"/>
+      <node ref="U3" pin="5"/>
     </net>
-    <net code="3" name="Net-(U2-Pad11)">
-      <node ref="U2" pin="11"/>
-      <node ref="U5" pin="9"/>
+    <net code="3" name="Net-(U7-Pad2)">
+      <node ref="U7" pin="2"/>
+      <node ref="U7" pin="5"/>
     </net>
-    <net code="4" name="Net-(U2-Pad10)">
-      <node ref="U5" pin="10"/>
-      <node ref="U2" pin="10"/>
+    <net code="4" name="/Pulse-pause timer 1 de 2/PA9">
+      <node ref="SW1" pin="12"/>
+      <node ref="U2" pin="5"/>
+      <node ref="RN5" pin="6"/>
     </net>
-    <net code="5" name="Net-(U5-Pad1)">
+    <net code="5" name="Net-(U12-Pad13)">
+      <node ref="U12" pin="2"/>
+      <node ref="U12" pin="13"/>
+    </net>
+    <net code="6" name="Net-(U7-Pad13)">
+      <node ref="U7" pin="13"/>
+    </net>
+    <net code="7" name="Net-(U7-Pad12)">
+      <node ref="U7" pin="12"/>
+    </net>
+    <net code="8" name="Net-(U5-Pad1)">
       <node ref="U5" pin="1"/>
     </net>
-    <net code="6" name="/Pulse-pause timer 1 de 2/PA6">
-      <node ref="SW1" pin="19"/>
-      <node ref="U6" pin="6"/>
-      <node ref="RN3" pin="7"/>
-    </net>
-    <net code="7" name="/Pulse-pause timer 1 de 2/PA5">
-      <node ref="RN3" pin="6"/>
-      <node ref="SW1" pin="20"/>
-      <node ref="U6" pin="2"/>
-    </net>
-    <net code="8" name="/Pulse-pause timer 1 de 2/PA4">
-      <node ref="SW1" pin="21"/>
-      <node ref="RN3" pin="5"/>
-      <node ref="U2" pin="13"/>
-    </net>
-    <net code="9" name="/Pulse-pause timer 1 de 2/PA3">
-      <node ref="U2" pin="9"/>
-      <node ref="RN3" pin="4"/>
-      <node ref="SW1" pin="22"/>
-    </net>
-    <net code="10" name="/Pulse-pause timer 1 de 2/PA2">
-      <node ref="U2" pin="6"/>
-      <node ref="SW1" pin="23"/>
-      <node ref="RN3" pin="3"/>
-    </net>
-    <net code="11" name="/Pulse-pause timer 1 de 2/PA1">
-      <node ref="RN3" pin="2"/>
-      <node ref="SW1" pin="24"/>
-      <node ref="U2" pin="2"/>
-    </net>
-    <net code="12" name="Net-(SW2-Pad6)">
-      <node ref="U15" pin="2"/>
-      <node ref="SW2" pin="6"/>
-    </net>
-    <net code="13" name="/Pulse-pause timer 1 de 2/CLK-PULSE">
-      <node ref="U13" pin="1"/>
-      <node ref="JP1" pin="2"/>
-    </net>
-    <net code="14" name="Net-(SW2-Pad2)">
-      <node ref="U15" pin="7"/>
-      <node ref="SW2" pin="2"/>
-    </net>
-    <net code="15" name="Net-(SW2-Pad1)">
-      <node ref="SW2" pin="1"/>
-      <node ref="U15" pin="9"/>
-    </net>
-    <net code="16" name="Net-(U13-Pad10)">
-      <node ref="U13" pin="13"/>
-      <node ref="U13" pin="10"/>
-    </net>
-    <net code="17" name="Net-(U18-Pad11)">
-      <node ref="U18" pin="11"/>
-      <node ref="U19" pin="2"/>
-    </net>
-    <net code="18" name="Net-(U18-Pad10)">
-      <node ref="U18" pin="10"/>
-      <node ref="U19" pin="3"/>
-    </net>
-    <net code="19" name="Net-(U18-Pad4)">
-      <node ref="U18" pin="4"/>
-      <node ref="U19" pin="4"/>
-    </net>
-    <net code="20" name="Net-(SW2-Pad5)">
-      <node ref="U15" pin="3"/>
-      <node ref="SW2" pin="5"/>
-    </net>
-    <net code="21" name="Net-(SW2-Pad4)">
-      <node ref="U15" pin="5"/>
-      <node ref="SW2" pin="4"/>
-    </net>
-    <net code="22" name="Net-(SW2-Pad3)">
-      <node ref="U15" pin="6"/>
-      <node ref="SW2" pin="3"/>
-    </net>
-    <net code="23" name="/Pulse-pause timer 1 de 2/PULSE_ENABLE">
-      <node ref="R3" pin="2"/>
-      <node ref="U8" pin="12"/>
-      <node ref="U8" pin="10"/>
-      <node ref="U13" pin="2"/>
-      <node ref="R2" pin="2"/>
-    </net>
-    <net code="24" name="Net-(U13-Pad3)">
-      <node ref="U13" pin="5"/>
-      <node ref="U13" pin="6"/>
-      <node ref="U13" pin="3"/>
-    </net>
-    <net code="25" name="Net-(U5-Pad3)">
-      <node ref="U5" pin="3"/>
-      <node ref="U6" pin="10"/>
-    </net>
-    <net code="26" name="Net-(U1-Pad8)">
-      <node ref="U5" pin="13"/>
-      <node ref="U1" pin="9"/>
-      <node ref="U1" pin="8"/>
-    </net>
-    <net code="27" name="Net-(U1-Pad12)">
-      <node ref="U1" pin="12"/>
+    <net code="9" name="Net-(U11-Pad13)">
       <node ref="U11" pin="13"/>
+      <node ref="U11" pin="2"/>
     </net>
-    <net code="28" name="Net-(U5-Pad2)">
+    <net code="10" name="/Pulse-pause timer 1 de 2/PPA5">
       <node ref="U6" pin="11"/>
-      <node ref="U5" pin="2"/>
-    </net>
-    <net code="29" name="Net-(U5-Pad4)">
-      <node ref="U6" pin="4"/>
-      <node ref="U5" pin="4"/>
-    </net>
-    <net code="30" name="Net-(U2-Pad3)">
       <node ref="U5" pin="12"/>
+    </net>
+    <net code="11" name="/Pulse-pause timer 1 de 2/PPA6">
+      <node ref="U6" pin="10"/>
+      <node ref="U5" pin="11"/>
+    </net>
+    <net code="12" name="/Pulse-pause timer 1 de 2/PPA8">
+      <node ref="U2" pin="10"/>
+      <node ref="U5" pin="10"/>
+    </net>
+    <net code="13" name="/Pulse-pause timer 1 de 2/PPA7">
+      <node ref="U5" pin="9"/>
+      <node ref="U2" pin="11"/>
+    </net>
+    <net code="14" name="/Pulse-pause timer 1 de 2/PPA9">
+      <node ref="U2" pin="4"/>
+      <node ref="U5" pin="5"/>
+    </net>
+    <net code="15" name="/Pulse-pause timer 1 de 2/PPA10">
+      <node ref="U5" pin="4"/>
       <node ref="U2" pin="3"/>
     </net>
-    <net code="31" name="Net-(U2-Pad4)">
-      <node ref="U5" pin="11"/>
-      <node ref="U2" pin="4"/>
+    <net code="16" name="/Pulse-pause timer 1 de 2/PPA11">
+      <node ref="U6" pin="4"/>
+      <node ref="U5" pin="3"/>
     </net>
-    <net code="32" name="Net-(U18-Pad3)">
-      <node ref="U18" pin="3"/>
-      <node ref="U19" pin="5"/>
-    </net>
-    <net code="33" name="Net-(U19-Pad1)">
-      <node ref="U19" pin="1"/>
-      <node ref="U19" pin="9"/>
-    </net>
-    <net code="34" name="Net-(U11-Pad1)">
-      <node ref="U11" pin="1"/>
-      <node ref="U11" pin="9"/>
-    </net>
-    <net code="35" name="Net-(U1-Pad10)">
-      <node ref="U1" pin="10"/>
-      <node ref="U1" pin="13"/>
-    </net>
-    <net code="36" name="Net-(SW1-Pad6)">
-      <node ref="SW1" pin="6"/>
-      <node ref="U3" pin="2"/>
-    </net>
-    <net code="37" name="Net-(SW1-Pad5)">
-      <node ref="SW1" pin="5"/>
-      <node ref="U3" pin="3"/>
-    </net>
-    <net code="38" name="Net-(SW1-Pad4)">
-      <node ref="U3" pin="5"/>
-      <node ref="SW1" pin="4"/>
-    </net>
-    <net code="39" name="Net-(SW1-Pad3)">
+    <net code="17" name="Net-(SW2-Pad3)">
+      <node ref="SW2" pin="3"/>
       <node ref="U3" pin="6"/>
-      <node ref="SW1" pin="3"/>
     </net>
-    <net code="40" name="Net-(SW1-Pad2)">
-      <node ref="U3" pin="7"/>
-      <node ref="SW1" pin="2"/>
+    <net code="18" name="Net-(SW1-Pad8)">
+      <node ref="SW1" pin="8"/>
+      <node ref="U3" pin="1"/>
     </net>
-    <net code="41" name="Net-(SW1-Pad1)">
-      <node ref="U3" pin="9"/>
-      <node ref="SW1" pin="1"/>
+    <net code="19" name="Net-(SW1-Pad7)">
+      <node ref="SW1" pin="7"/>
+      <node ref="U3" pin="15"/>
     </net>
-    <net code="42" name="/Pulse-pause timer 1 de 2/PAUSE_ENABLE">
-      <node ref="U8" pin="9"/>
-      <node ref="U8" pin="11"/>
-      <node ref="U1" pin="2"/>
+    <net code="20" name="Net-(SW1-Pad6)">
+      <node ref="SW1" pin="6"/>
+      <node ref="U3" pin="14"/>
     </net>
-    <net code="43" name="Net-(U1-Pad3)">
+    <net code="21" name="Net-(SW1-Pad5)">
+      <node ref="SW1" pin="5"/>
+      <node ref="U3" pin="12"/>
+    </net>
+    <net code="22" name="/Pulse-pause timer 1 de 2/PPA12">
+      <node ref="U5" pin="2"/>
+      <node ref="U6" pin="3"/>
+    </net>
+    <net code="23" name="/Pulse-pause timer 1 de 2/PPA2">
+      <node ref="U10" pin="10"/>
+      <node ref="U11" pin="11"/>
+    </net>
+    <net code="24" name="/Pulse-pause timer 1 de 2/PPA1">
+      <node ref="U10" pin="11"/>
+      <node ref="U11" pin="12"/>
+    </net>
+    <net code="25" name="Net-(U1-Pad3)">
       <node ref="U1" pin="3"/>
       <node ref="U1" pin="5"/>
       <node ref="U1" pin="6"/>
     </net>
-    <net code="44" name="/Pulse-pause timer 1 de 2/CLK-PAUSE">
-      <node ref="U1" pin="1"/>
-      <node ref="JP2" pin="2"/>
+    <net code="26" name="VDD">
+      <node ref="U19" pin="5"/>
+      <node ref="D2" pin="1"/>
+      <node ref="U16" pin="14"/>
+      <node ref="U19" pin="3"/>
+      <node ref="RN8" pin="1"/>
+      <node ref="K1" pin="A2"/>
+      <node ref="U19" pin="4"/>
+      <node ref="RN7" pin="1"/>
+      <node ref="U15" pin="16"/>
+      <node ref="C9" pin="2"/>
+      <node ref="C11" pin="2"/>
+      <node ref="U4" pin="16"/>
+      <node ref="JP36" pin="1"/>
+      <node ref="JP35" pin="1"/>
+      <node ref="JP34" pin="1"/>
+      <node ref="JP33" pin="1"/>
+      <node ref="U21" pin="9"/>
+      <node ref="U20" pin="9"/>
+      <node ref="C23" pin="1"/>
+      <node ref="C24" pin="1"/>
+      <node ref="JP32" pin="1"/>
+      <node ref="C18" pin="2"/>
+      <node ref="C19" pin="2"/>
+      <node ref="JP31" pin="1"/>
+      <node ref="C16" pin="2"/>
+      <node ref="R4" pin="2"/>
+      <node ref="U9" pin="16"/>
+      <node ref="C7" pin="2"/>
+      <node ref="C15" pin="2"/>
+      <node ref="U3" pin="16"/>
+      <node ref="C8" pin="2"/>
+      <node ref="C10" pin="2"/>
+      <node ref="C12" pin="2"/>
+      <node ref="C14" pin="2"/>
+      <node ref="C13" pin="2"/>
+      <node ref="C17" pin="2"/>
+      <node ref="C6" pin="2"/>
+      <node ref="U11" pin="3"/>
+      <node ref="U11" pin="4"/>
+      <node ref="U11" pin="5"/>
+      <node ref="C26" pin="2"/>
+      <node ref="C25" pin="2"/>
+      <node ref="C22" pin="2"/>
+      <node ref="D3" pin="1"/>
+      <node ref="U14" pin="14"/>
+      <node ref="U17" pin="14"/>
+      <node ref="U18" pin="14"/>
+      <node ref="C27" pin="1"/>
+      <node ref="F1" pin="2"/>
+      <node ref="C20" pin="2"/>
+      <node ref="C21" pin="2"/>
+      <node ref="U7" pin="14"/>
+      <node ref="U1" pin="14"/>
+      <node ref="RN5" pin="1"/>
+      <node ref="RN6" pin="1"/>
+      <node ref="U12" pin="5"/>
+      <node ref="U6" pin="14"/>
+      <node ref="U2" pin="14"/>
+      <node ref="U13" pin="14"/>
+      <node ref="U12" pin="14"/>
+      <node ref="U5" pin="14"/>
+      <node ref="U10" pin="14"/>
+      <node ref="U12" pin="4"/>
+      <node ref="U12" pin="3"/>
+      <node ref="U11" pin="14"/>
+      <node ref="U8" pin="14"/>
+      <node ref="U19" pin="14"/>
     </net>
-    <net code="45" name="Net-(SW1-Pad7)">
-      <node ref="SW1" pin="7"/>
-      <node ref="U3" pin="4"/>
+    <net code="27" name="Net-(U1-Pad8)">
+      <node ref="U1" pin="9"/>
+      <node ref="U1" pin="8"/>
+      <node ref="U5" pin="13"/>
     </net>
-    <net code="46" name="Net-(SW1-Pad10)">
-      <node ref="SW1" pin="10"/>
-      <node ref="U3" pin="14"/>
+    <net code="28" name="/Pulse-pause timer 1 de 2/PPA3">
+      <node ref="U10" pin="4"/>
+      <node ref="U11" pin="9"/>
     </net>
-    <net code="47" name="Net-(SW1-Pad11)">
-      <node ref="SW1" pin="11"/>
-      <node ref="U3" pin="15"/>
+    <net code="29" name="/Pulse-pause timer 1 de 2/PPA4">
+      <node ref="U11" pin="10"/>
+      <node ref="U10" pin="3"/>
     </net>
-    <net code="48" name="Net-(SW1-Pad8)">
-      <node ref="SW1" pin="8"/>
-      <node ref="U3" pin="13"/>
-    </net>
-    <net code="49" name="Net-(SW1-Pad9)">
-      <node ref="SW1" pin="9"/>
-      <node ref="U3" pin="12"/>
-    </net>
-    <net code="50" name="Net-(U1-Pad4)">
+    <net code="30" name="Net-(U1-Pad4)">
       <node ref="U1" pin="4"/>
       <node ref="U3" pin="10"/>
     </net>
-    <net code="51" name="Net-(SW1-Pad12)">
-      <node ref="U3" pin="1"/>
-      <node ref="SW1" pin="12"/>
-    </net>
-    <net code="52" name="Net-(U10-Pad4)">
-      <node ref="U11" pin="4"/>
-      <node ref="U10" pin="4"/>
-    </net>
-    <net code="53" name="Net-(U10-Pad3)">
-      <node ref="U11" pin="5"/>
-      <node ref="U10" pin="3"/>
-    </net>
-    <net code="54" name="Net-(U10-Pad10)">
-      <node ref="U11" pin="3"/>
-      <node ref="U10" pin="10"/>
-    </net>
-    <net code="55" name="Net-(U10-Pad11)">
-      <node ref="U10" pin="11"/>
-      <node ref="U11" pin="2"/>
-    </net>
-    <net code="56" name="Net-(U9-Pad15)">
-      <node ref="U9" pin="15"/>
-    </net>
-    <net code="58" name="/Pulse-pause timer 1 de 2/PA11">
-      <node ref="SW1" pin="14"/>
-      <node ref="U10" pin="9"/>
-      <node ref="RN3" pin="12"/>
-    </net>
-    <net code="59" name="/Pulse-pause timer 1 de 2/PA12">
-      <node ref="SW1" pin="13"/>
-      <node ref="U10" pin="13"/>
-      <node ref="RN3" pin="13"/>
-    </net>
-    <net code="61" name="/Pulse-pause timer 1 de 2/PA7">
-      <node ref="U6" pin="9"/>
-      <node ref="SW1" pin="18"/>
-      <node ref="RN3" pin="8"/>
-    </net>
-    <net code="62" name="/Pulse-pause timer 1 de 2/PA8">
-      <node ref="U6" pin="13"/>
-      <node ref="SW1" pin="17"/>
-      <node ref="RN3" pin="9"/>
-    </net>
-    <net code="63" name="/Pulse-pause timer 1 de 2/PA10">
-      <node ref="U10" pin="6"/>
-      <node ref="RN3" pin="11"/>
-      <node ref="SW1" pin="15"/>
-    </net>
-    <net code="64" name="/Pulse-pause timer 1 de 2/PA9">
-      <node ref="RN3" pin="10"/>
-      <node ref="U10" pin="2"/>
-      <node ref="SW1" pin="16"/>
-    </net>
-    <net code="65" name="Net-(U12-Pad1)">
-      <node ref="U12" pin="1"/>
-      <node ref="U12" pin="12"/>
-    </net>
-    <net code="66" name="Net-(U13-Pad4)">
-      <node ref="U15" pin="10"/>
-      <node ref="U13" pin="4"/>
-    </net>
-    <net code="67" name="/Pulse-pause timer 1 de 2/PU9">
-      <node ref="U18" pin="2"/>
-      <node ref="SW2" pin="16"/>
-      <node ref="RN4" pin="10"/>
-    </net>
-    <net code="68" name="/Pulse-pause timer 1 de 2/PU8">
-      <node ref="U17" pin="13"/>
-      <node ref="RN4" pin="9"/>
-      <node ref="SW2" pin="17"/>
-    </net>
-    <net code="69" name="Net-(U8-Pad13)">
-      <node ref="U8" pin="13"/>
-      <node ref="U8" pin="4"/>
-    </net>
-    <net code="70" name="Net-(C4-Pad2)">
-      <node ref="U8" pin="8"/>
-      <node ref="C4" pin="2"/>
-      <node ref="U8" pin="3"/>
-    </net>
-    <net code="71" name="Net-(C3-Pad2)">
-      <node ref="U8" pin="2"/>
-      <node ref="U8" pin="1"/>
-      <node ref="U1" pin="11"/>
-      <node ref="U3" pin="11"/>
-      <node ref="C3" pin="2"/>
-    </net>
-    <net code="72" name="Net-(C5-Pad2)">
-      <node ref="U15" pin="11"/>
-      <node ref="U8" pin="5"/>
-      <node ref="U13" pin="11"/>
-      <node ref="C5" pin="2"/>
-      <node ref="U8" pin="6"/>
-    </net>
-    <net code="73" name="Net-(D1-Pad1)">
-      <node ref="D1" pin="1"/>
-      <node ref="Q2" pin="3"/>
-    </net>
-    <net code="74" name="VDD">
-      <node ref="C10" pin="2"/>
-      <node ref="D2" pin="1"/>
-      <node ref="U16" pin="14"/>
-      <node ref="C13" pin="2"/>
-      <node ref="C11" pin="2"/>
-      <node ref="C9" pin="2"/>
-      <node ref="JP33" pin="1"/>
-      <node ref="JP35" pin="1"/>
-      <node ref="JP34" pin="1"/>
-      <node ref="C12" pin="2"/>
-      <node ref="C8" pin="2"/>
-      <node ref="C16" pin="2"/>
-      <node ref="C6" pin="2"/>
-      <node ref="JP36" pin="1"/>
-      <node ref="K1" pin="A2"/>
-      <node ref="F1" pin="2"/>
-      <node ref="C15" pin="2"/>
-      <node ref="C18" pin="2"/>
-      <node ref="C20" pin="2"/>
-      <node ref="U31" pin="9"/>
-      <node ref="C19" pin="2"/>
-      <node ref="C21" pin="2"/>
-      <node ref="U9" pin="16"/>
-      <node ref="C23" pin="1"/>
-      <node ref="C24" pin="1"/>
-      <node ref="R4" pin="2"/>
-      <node ref="U5" pin="14"/>
-      <node ref="U30" pin="9"/>
-      <node ref="U4" pin="16"/>
-      <node ref="C14" pin="2"/>
-      <node ref="JP31" pin="1"/>
-      <node ref="JP32" pin="1"/>
-      <node ref="C7" pin="2"/>
-      <node ref="C17" pin="2"/>
-      <node ref="C22" pin="2"/>
-      <node ref="U19" pin="12"/>
-      <node ref="RN3" pin="1"/>
-      <node ref="U19" pin="11"/>
-      <node ref="U11" pin="10"/>
-      <node ref="U3" pin="16"/>
-      <node ref="U19" pin="10"/>
-      <node ref="U12" pin="9"/>
-      <node ref="U12" pin="11"/>
-      <node ref="U15" pin="16"/>
-      <node ref="RN4" pin="1"/>
-      <node ref="U11" pin="12"/>
-      <node ref="U12" pin="10"/>
-      <node ref="U11" pin="11"/>
-    </net>
-    <net code="75" name="Net-(Q2-Pad2)">
-      <node ref="Q2" pin="2"/>
-      <node ref="R3" pin="1"/>
-    </net>
-    <net code="76" name="Net-(U16-Pad1)">
-      <node ref="U16" pin="1"/>
-    </net>
-    <net code="77" name="Net-(2A1-Pad1)">
-      <node ref="J2" pin="1"/>
-      <node ref="2A1" pin="1"/>
-    </net>
-    <net code="78" name="Net-(U13-Pad12)">
-      <node ref="U19" pin="13"/>
-      <node ref="U13" pin="12"/>
-    </net>
-    <net code="79" name="/Pulse-pause timer 1 de 2/PU7">
-      <node ref="RN4" pin="8"/>
-      <node ref="SW2" pin="18"/>
-      <node ref="U17" pin="9"/>
-    </net>
-    <net code="80" name="Net-(U16-Pad3)">
-      <node ref="U17" pin="10"/>
-      <node ref="U16" pin="3"/>
-    </net>
-    <net code="81" name="/Pulse-pause timer 1 de 2/PU6">
-      <node ref="RN4" pin="7"/>
-      <node ref="SW2" pin="19"/>
-      <node ref="U17" pin="6"/>
-    </net>
-    <net code="82" name="Net-(U16-Pad4)">
-      <node ref="U17" pin="4"/>
-      <node ref="U16" pin="4"/>
-    </net>
-    <net code="83" name="/Pulse-pause timer 1 de 2/PU5">
-      <node ref="U17" pin="2"/>
-      <node ref="RN4" pin="6"/>
-      <node ref="SW2" pin="20"/>
-    </net>
-    <net code="84" name="/Pulse-pause timer 1 de 2/PU4">
-      <node ref="U14" pin="13"/>
-      <node ref="SW2" pin="21"/>
-      <node ref="RN4" pin="5"/>
-    </net>
-    <net code="85" name="/Pulse-pause timer 1 de 2/PU3">
-      <node ref="SW2" pin="22"/>
-      <node ref="U14" pin="9"/>
-      <node ref="RN4" pin="4"/>
-    </net>
-    <net code="86" name="/Pulse-pause timer 1 de 2/PU2">
-      <node ref="RN4" pin="3"/>
-      <node ref="SW2" pin="23"/>
-      <node ref="U14" pin="6"/>
-    </net>
-    <net code="87" name="Net-(U14-Pad4)">
-      <node ref="U14" pin="4"/>
-      <node ref="U16" pin="11"/>
-    </net>
-    <net code="88" name="Net-(U14-Pad3)">
-      <node ref="U14" pin="3"/>
-      <node ref="U16" pin="12"/>
-    </net>
-    <net code="89" name="/Pulse-pause timer 1 de 2/PU1">
-      <node ref="SW2" pin="24"/>
-      <node ref="RN4" pin="2"/>
-      <node ref="U14" pin="2"/>
-    </net>
-    <net code="90" name="Net-(SW2-Pad10)">
-      <node ref="SW2" pin="10"/>
-      <node ref="U15" pin="14"/>
-    </net>
-    <net code="91" name="Net-(SW2-Pad7)">
-      <node ref="SW2" pin="7"/>
-      <node ref="U15" pin="4"/>
-    </net>
-    <net code="92" name="Net-(SW2-Pad11)">
-      <node ref="SW2" pin="11"/>
-      <node ref="U15" pin="15"/>
-    </net>
-    <net code="93" name="Net-(SW2-Pad8)">
-      <node ref="SW2" pin="8"/>
-      <node ref="U15" pin="13"/>
-    </net>
-    <net code="94" name="Net-(SW2-Pad9)">
-      <node ref="SW2" pin="9"/>
-      <node ref="U15" pin="12"/>
-    </net>
-    <net code="95" name="Net-(SW2-Pad12)">
-      <node ref="SW2" pin="12"/>
-      <node ref="U15" pin="1"/>
-    </net>
-    <net code="96" name="Net-(U16-Pad2)">
-      <node ref="U17" pin="11"/>
-      <node ref="U16" pin="2"/>
-    </net>
-    <net code="97" name="Net-(U14-Pad10)">
-      <node ref="U16" pin="10"/>
-      <node ref="U14" pin="10"/>
-    </net>
-    <net code="98" name="Net-(U16-Pad5)">
-      <node ref="U17" pin="3"/>
-      <node ref="U16" pin="5"/>
-    </net>
-    <net code="99" name="Net-(U14-Pad11)">
-      <node ref="U16" pin="9"/>
-      <node ref="U14" pin="11"/>
-    </net>
-    <net code="100" name="Net-(U13-Pad8)">
-      <node ref="U13" pin="8"/>
-      <node ref="U16" pin="13"/>
-      <node ref="U13" pin="9"/>
-    </net>
-    <net code="102" name="/Pulse-pause timer 1 de 2/PU12">
-      <node ref="RN4" pin="13"/>
-      <node ref="U18" pin="13"/>
-      <node ref="SW2" pin="13"/>
-    </net>
-    <net code="103" name="/Pulse-pause timer 1 de 2/PU11">
-      <node ref="SW2" pin="14"/>
-      <node ref="RN4" pin="12"/>
-      <node ref="U18" pin="9"/>
-    </net>
-    <net code="104" name="/Pulse-pause timer 1 de 2/PU10">
-      <node ref="RN4" pin="11"/>
-      <node ref="SW2" pin="15"/>
-      <node ref="U18" pin="6"/>
-    </net>
-    <net code="105" name="Net-(J2-Pad4)">
-      <node ref="K1" pin="11"/>
-      <node ref="J2" pin="4"/>
-    </net>
-    <net code="106" name="Net-(K1-Pad12)">
-      <node ref="K1" pin="12"/>
-    </net>
-    <net code="107" name="Net-(2A2-Pad2)">
-      <node ref="2A2" pin="2"/>
-      <node ref="K1" pin="14"/>
-    </net>
-    <net code="108" name="Net-(K1-Pad22)">
-      <node ref="K1" pin="22"/>
-    </net>
-    <net code="109" name="Net-(2A1-Pad2)">
-      <node ref="K1" pin="24"/>
-      <node ref="2A1" pin="2"/>
-    </net>
-    <net code="110" name="/Pulse-pause timer 1 de 2/500ms">
-      <node ref="U4" pin="3"/>
-      <node ref="U7" pin="3"/>
-    </net>
-    <net code="111" name="Net-(C1-Pad1)">
-      <node ref="C1" pin="1"/>
-      <node ref="U4" pin="11"/>
-      <node ref="R1" pin="1"/>
-      <node ref="Y1" pin="1"/>
-    </net>
-    <net code="112" name="Net-(C2-Pad1)">
-      <node ref="U4" pin="10"/>
-      <node ref="C2" pin="1"/>
-      <node ref="R1" pin="2"/>
-      <node ref="Y1" pin="2"/>
-    </net>
-    <net code="113" name="Net-(U4-Pad4)">
-      <node ref="U4" pin="4"/>
-    </net>
-    <net code="114" name="Net-(U4-Pad1)">
-      <node ref="U4" pin="1"/>
-    </net>
-    <net code="115" name="Net-(U4-Pad13)">
-      <node ref="U4" pin="13"/>
-    </net>
-    <net code="116" name="Net-(U4-Pad14)">
-      <node ref="U4" pin="14"/>
-    </net>
-    <net code="117" name="Net-(U4-Pad15)">
-      <node ref="U4" pin="15"/>
-    </net>
-    <net code="118" name="Net-(U4-Pad2)">
-      <node ref="U4" pin="2"/>
-    </net>
-    <net code="119" name="Net-(U4-Pad5)">
-      <node ref="U4" pin="5"/>
-    </net>
-    <net code="120" name="Net-(U4-Pad6)">
-      <node ref="U4" pin="6"/>
-    </net>
-    <net code="121" name="Net-(U4-Pad7)">
-      <node ref="U4" pin="7"/>
-    </net>
-    <net code="122" name="Net-(U4-Pad9)">
-      <node ref="U4" pin="9"/>
-    </net>
-    <net code="123" name="Net-(D2-Pad2)">
-      <node ref="K1" pin="A1"/>
-      <node ref="D2" pin="2"/>
-      <node ref="Q1" pin="3"/>
-    </net>
-    <net code="124" name="Net-(Q1-Pad2)">
-      <node ref="Q1" pin="2"/>
-      <node ref="R2" pin="1"/>
-    </net>
-    <net code="125" name="Net-(F1-Pad1)">
-      <node ref="F1" pin="1"/>
-      <node ref="J1" pin="1"/>
-    </net>
-    <net code="126" name="Net-(U7-Pad2)">
-      <node ref="U7" pin="2"/>
-      <node ref="U7" pin="5"/>
-    </net>
-    <net code="127" name="Net-(U9-Pad9)">
-      <node ref="U9" pin="9"/>
-    </net>
-    <net code="128" name="Net-(U9-Pad7)">
-      <node ref="U9" pin="7"/>
-    </net>
-    <net code="129" name="Net-(U9-Pad4)">
-      <node ref="U9" pin="4"/>
-    </net>
-    <net code="130" name="Net-(U9-Pad13)">
-      <node ref="U9" pin="13"/>
-    </net>
-    <net code="131" name="Net-(U9-Pad12)">
-      <node ref="U9" pin="12"/>
-    </net>
-    <net code="132" name="/Pulse-pause timer 1 de 2/1sec">
-      <node ref="JP2" pin="3"/>
-      <node ref="U9" pin="10"/>
-      <node ref="JP1" pin="3"/>
-      <node ref="U7" pin="1"/>
-    </net>
-    <net code="133" name="/Pulse-pause timer 1 de 2/60sec">
-      <node ref="JP1" pin="1"/>
-      <node ref="JP2" pin="1"/>
-      <node ref="U9" pin="11"/>
-      <node ref="U12" pin="13"/>
-    </net>
-    <net code="134" name="Net-(U9-Pad14)">
-      <node ref="U9" pin="14"/>
-    </net>
-    <net code="135" name="Net-(U9-Pad1)">
-      <node ref="U9" pin="1"/>
-    </net>
-    <net code="136" name="Net-(J2-Pad2)">
-      <node ref="J2" pin="2"/>
-      <node ref="K1" pin="21"/>
-    </net>
-    <net code="137" name="Net-(D1-Pad2)">
-      <node ref="R4" pin="1"/>
-      <node ref="D1" pin="2"/>
-    </net>
-    <net code="139" name="Net-(2A2-Pad1)">
+    <net code="31" name="Net-(2A2-Pad1)">
       <node ref="J2" pin="3"/>
       <node ref="2A2" pin="1"/>
     </net>
-    <net code="140" name="Net-(U7-Pad12)">
-      <node ref="U7" pin="12"/>
-    </net>
-    <net code="141" name="Net-(U7-Pad13)">
-      <node ref="U7" pin="13"/>
-    </net>
-    <net code="142" name="Net-(U12-Pad2)">
-      <node ref="U12" pin="2"/>
-      <node ref="U9" pin="6"/>
-    </net>
-    <net code="143" name="Net-(U12-Pad3)">
-      <node ref="U12" pin="3"/>
-      <node ref="U9" pin="5"/>
-    </net>
-    <net code="144" name="Net-(U12-Pad4)">
-      <node ref="U12" pin="4"/>
-      <node ref="U9" pin="3"/>
-    </net>
-    <net code="145" name="Net-(U12-Pad5)">
-      <node ref="U9" pin="2"/>
-      <node ref="U12" pin="5"/>
-    </net>
-    <net code="146" name="Net-(JP33-Pad2)">
-      <node ref="U30" pin="17"/>
-      <node ref="JP33" pin="2"/>
-    </net>
-    <net code="147" name="Net-(J3-Pad36)">
-      <node ref="J3" pin="36"/>
-    </net>
-    <net code="148" name="Net-(J3-Pad29)">
-      <node ref="J3" pin="29"/>
-    </net>
-    <net code="149" name="Net-(J3-Pad7)">
-      <node ref="J3" pin="7"/>
-    </net>
-    <net code="150" name="Net-(J3-Pad13)">
-      <node ref="J3" pin="13"/>
-    </net>
-    <net code="151" name="Net-(J3-Pad37)">
-      <node ref="J3" pin="37"/>
-    </net>
-    <net code="152" name="Net-(J3-Pad22)">
-      <node ref="J3" pin="22"/>
-    </net>
-    <net code="153" name="Net-(J3-Pad18)">
-      <node ref="J3" pin="18"/>
-    </net>
-    <net code="154" name="Net-(J3-Pad16)">
-      <node ref="J3" pin="16"/>
-    </net>
-    <net code="155" name="Net-(J3-Pad15)">
-      <node ref="J3" pin="15"/>
-    </net>
-    <net code="156" name="Net-(J3-Pad40)">
-      <node ref="J3" pin="40"/>
-    </net>
-    <net code="157" name="Net-(J3-Pad38)">
-      <node ref="J3" pin="38"/>
-    </net>
-    <net code="158" name="Net-(J3-Pad35)">
-      <node ref="J3" pin="35"/>
-    </net>
-    <net code="159" name="Net-(J3-Pad12)">
-      <node ref="J3" pin="12"/>
-    </net>
-    <net code="160" name="Net-(J3-Pad10)">
-      <node ref="J3" pin="10"/>
-    </net>
-    <net code="161" name="Net-(J3-Pad8)">
-      <node ref="J3" pin="8"/>
-    </net>
-    <net code="162" name="Net-(J3-Pad28)">
-      <node ref="J3" pin="28"/>
-    </net>
-    <net code="163" name="Net-(J3-Pad27)">
-      <node ref="J3" pin="27"/>
-    </net>
-    <net code="164" name="Net-(JP36-Pad2)">
-      <node ref="JP36" pin="2"/>
-      <node ref="U31" pin="17"/>
-    </net>
-    <net code="165" name="Net-(J3-Pad26)">
-      <node ref="J3" pin="26"/>
-    </net>
-    <net code="166" name="Net-(U30-Pad5)">
-      <node ref="U30" pin="5"/>
-    </net>
-    <net code="167" name="Net-(U30-Pad6)">
-      <node ref="U30" pin="6"/>
-    </net>
-    <net code="168" name="Net-(U30-Pad7)">
-      <node ref="U30" pin="7"/>
-    </net>
-    <net code="169" name="Net-(U30-Pad8)">
-      <node ref="U30" pin="8"/>
-    </net>
-    <net code="170" name="Net-(J3-Pad1)">
-      <node ref="J3" pin="1"/>
-    </net>
-    <net code="171" name="Net-(J3-Pad11)">
-      <node ref="J3" pin="11"/>
-    </net>
-    <net code="172" name="Net-(J3-Pad14)">
-      <node ref="J3" pin="14"/>
-    </net>
-    <net code="173" name="Net-(J3-Pad17)">
-      <node ref="J3" pin="17"/>
-    </net>
-    <net code="174" name="Net-(J3-Pad19)">
-      <node ref="J3" pin="19"/>
-    </net>
-    <net code="175" name="Net-(J3-Pad2)">
-      <node ref="J3" pin="2"/>
-    </net>
-    <net code="176" name="Net-(J3-Pad20)">
-      <node ref="J3" pin="20"/>
-    </net>
-    <net code="177" name="Net-(J3-Pad21)">
-      <node ref="J3" pin="21"/>
-    </net>
-    <net code="178" name="Net-(J3-Pad23)">
-      <node ref="J3" pin="23"/>
-    </net>
-    <net code="179" name="Net-(J3-Pad24)">
-      <node ref="J3" pin="24"/>
-    </net>
-    <net code="180" name="Net-(J3-Pad25)">
-      <node ref="J3" pin="25"/>
-    </net>
-    <net code="181" name="Net-(U30-Pad11)">
-      <node ref="U30" pin="11"/>
-    </net>
-    <net code="182" name="Net-(U30-Pad14)">
-      <node ref="U30" pin="14"/>
-    </net>
-    <net code="183" name="Net-(JP31-Pad2)">
-      <node ref="JP31" pin="2"/>
-      <node ref="U30" pin="15"/>
-    </net>
-    <net code="184" name="Net-(U30-Pad18)">
-      <node ref="U30" pin="18"/>
-    </net>
-    <net code="185" name="Net-(U30-Pad19)">
-      <node ref="U30" pin="19"/>
-    </net>
-    <net code="186" name="Net-(U30-Pad20)">
-      <node ref="U30" pin="20"/>
-    </net>
-    <net code="187" name="Net-(U31-Pad8)">
-      <node ref="U31" pin="8"/>
-    </net>
-    <net code="188" name="Net-(U31-Pad7)">
-      <node ref="U31" pin="7"/>
-    </net>
-    <net code="189" name="Net-(U31-Pad20)">
-      <node ref="U31" pin="20"/>
-    </net>
-    <net code="190" name="Net-(U31-Pad11)">
-      <node ref="U31" pin="11"/>
-    </net>
-    <net code="191" name="Net-(U31-Pad14)">
-      <node ref="U31" pin="14"/>
-    </net>
-    <net code="192" name="Net-(U31-Pad18)">
-      <node ref="U31" pin="18"/>
-    </net>
-    <net code="193" name="Net-(U31-Pad19)">
-      <node ref="U31" pin="19"/>
-    </net>
-    <net code="194" name="Net-(U31-Pad5)">
-      <node ref="U31" pin="5"/>
-    </net>
-    <net code="195" name="Net-(U31-Pad6)">
-      <node ref="U31" pin="6"/>
-    </net>
-    <net code="196" name="Net-(J3-Pad9)">
-      <node ref="J3" pin="9"/>
-    </net>
-    <net code="197" name="Net-(J3-Pad30)">
-      <node ref="J3" pin="30"/>
-    </net>
-    <net code="198" name="Net-(J3-Pad34)">
-      <node ref="J3" pin="34"/>
-    </net>
-    <net code="199" name="Net-(J3-Pad39)">
-      <node ref="J3" pin="39"/>
-    </net>
-    <net code="200" name="Net-(J3-Pad4)">
-      <node ref="J3" pin="4"/>
-    </net>
-    <net code="201" name="Net-(J3-Pad33)">
-      <node ref="J3" pin="33"/>
-    </net>
-    <net code="202" name="Net-(J3-Pad32)">
-      <node ref="J3" pin="32"/>
-    </net>
-    <net code="203" name="Net-(J3-Pad31)">
-      <node ref="J3" pin="31"/>
-    </net>
-    <net code="205" name="Net-(JP32-Pad2)">
-      <node ref="U30" pin="16"/>
-      <node ref="JP32" pin="2"/>
-    </net>
-    <net code="206" name="Net-(J3-Pad3)">
-      <node ref="U30" pin="13"/>
-      <node ref="U31" pin="13"/>
-      <node ref="J3" pin="3"/>
-    </net>
-    <net code="207" name="Net-(J3-Pad5)">
-      <node ref="U30" pin="12"/>
-      <node ref="U31" pin="12"/>
-      <node ref="J3" pin="5"/>
-    </net>
-    <net code="208" name="Net-(JP34-Pad2)">
-      <node ref="JP34" pin="2"/>
-      <node ref="U31" pin="15"/>
-    </net>
-    <net code="209" name="Net-(JP35-Pad2)">
-      <node ref="JP35" pin="2"/>
-      <node ref="U31" pin="16"/>
-    </net>
-    <net code="210" name="/Pulse-pause timer 1 de 2/P1">
-      <node ref="U30" pin="21"/>
-      <node ref="RN1" pin="13"/>
-      <node ref="U2" pin="1"/>
-    </net>
-    <net code="211" name="/Pulse-pause timer 1 de 2/U1">
-      <node ref="U31" pin="21"/>
+    <net code="32" name="Net-(2A1-Pad1)">
+      <node ref="2A1" pin="1"/>
+      <node ref="J2" pin="1"/>
+    </net>
+    <net code="33" name="/Pulse-pause timer 1 de 2/CLK-PULSE">
+      <node ref="JP1" pin="2"/>
+      <node ref="U13" pin="1"/>
+    </net>
+    <net code="34" name="Net-(SW2-Pad2)">
+      <node ref="U3" pin="7"/>
+      <node ref="SW2" pin="2"/>
+    </net>
+    <net code="35" name="Net-(SW2-Pad1)">
+      <node ref="U3" pin="9"/>
+      <node ref="SW2" pin="1"/>
+    </net>
+    <net code="36" name="Net-(SW1-Pad4)">
+      <node ref="U3" pin="13"/>
+      <node ref="SW1" pin="4"/>
+    </net>
+    <net code="37" name="Net-(SW1-Pad3)">
+      <node ref="U3" pin="4"/>
+      <node ref="SW1" pin="3"/>
+    </net>
+    <net code="38" name="Net-(SW1-Pad2)">
+      <node ref="U3" pin="2"/>
+      <node ref="SW1" pin="2"/>
+    </net>
+    <net code="39" name="/Pulse-pause timer 1 de 2/PA5">
+      <node ref="SW1" pin="16"/>
+      <node ref="U6" pin="13"/>
+      <node ref="RN5" pin="2"/>
+    </net>
+    <net code="40" name="/Pulse-pause timer 1 de 2/PA6">
+      <node ref="U6" pin="9"/>
+      <node ref="RN5" pin="3"/>
+      <node ref="SW1" pin="15"/>
+    </net>
+    <net code="41" name="/Pulse-pause timer 1 de 2/PA7">
+      <node ref="SW1" pin="14"/>
+      <node ref="U2" pin="13"/>
+      <node ref="RN5" pin="4"/>
+    </net>
+    <net code="42" name="Net-(SW1-Pad1)">
+      <node ref="SW1" pin="1"/>
+      <node ref="U3" pin="3"/>
+    </net>
+    <net code="43" name="/Pulse-pause timer 1 de 2/&amp;PPA1-12">
+      <node ref="C4" pin="2"/>
+      <node ref="U8" pin="8"/>
+      <node ref="U8" pin="3"/>
+    </net>
+    <net code="44" name="Net-(D1-Pad1)">
+      <node ref="Q2" pin="3"/>
+      <node ref="D1" pin="1"/>
+    </net>
+    <net code="45" name="Net-(Q2-Pad2)">
+      <node ref="R3" pin="1"/>
+      <node ref="Q2" pin="2"/>
+    </net>
+    <net code="46" name="Net-(U16-Pad1)">
+      <node ref="U16" pin="1"/>
+    </net>
+    <net code="47" name="Net-(U19-Pad13)">
+      <node ref="U19" pin="2"/>
+      <node ref="U19" pin="13"/>
+    </net>
+    <net code="48" name="/Pulse-pause timer 1 de 2/PPU5">
+      <node ref="U16" pin="12"/>
+      <node ref="U17" pin="11"/>
+    </net>
+    <net code="49" name="/Pulse-pause timer 1 de 2/PPU6">
+      <node ref="U17" pin="10"/>
+      <node ref="U16" pin="11"/>
+    </net>
+    <net code="50" name="/Pulse-pause timer 1 de 2/PPU8">
+      <node ref="U14" pin="10"/>
+      <node ref="U16" pin="10"/>
+    </net>
+    <net code="51" name="/Pulse-pause timer 1 de 2/PPU7">
+      <node ref="U14" pin="11"/>
+      <node ref="U16" pin="9"/>
+    </net>
+    <net code="52" name="/Pulse-pause timer 1 de 2/PPU9">
+      <node ref="U16" pin="5"/>
+      <node ref="U14" pin="4"/>
+    </net>
+    <net code="53" name="/Pulse-pause timer 1 de 2/PPU10">
+      <node ref="U16" pin="4"/>
+      <node ref="U14" pin="3"/>
+    </net>
+    <net code="54" name="/Pulse-pause timer 1 de 2/PPU11">
+      <node ref="U16" pin="3"/>
+      <node ref="U17" pin="4"/>
+    </net>
+    <net code="55" name="/Pulse-pause timer 1 de 2/PPU12">
+      <node ref="U16" pin="2"/>
+      <node ref="U17" pin="3"/>
+    </net>
+    <net code="56" name="Net-(U13-Pad8)">
+      <node ref="U13" pin="9"/>
+      <node ref="U13" pin="8"/>
+      <node ref="U16" pin="13"/>
+    </net>
+    <net code="57" name="Net-(SW4-Pad3)">
+      <node ref="U15" pin="6"/>
+      <node ref="SW4" pin="3"/>
+    </net>
+    <net code="58" name="Net-(SW4-Pad4)">
+      <node ref="U15" pin="5"/>
+      <node ref="SW4" pin="4"/>
+    </net>
+    <net code="59" name="Net-(SW3-Pad8)">
+      <node ref="SW3" pin="8"/>
+      <node ref="U15" pin="1"/>
+    </net>
+    <net code="60" name="Net-(SW3-Pad7)">
+      <node ref="U15" pin="15"/>
+      <node ref="SW3" pin="7"/>
+    </net>
+    <net code="61" name="Net-(SW3-Pad6)">
+      <node ref="SW3" pin="6"/>
+      <node ref="U15" pin="14"/>
+    </net>
+    <net code="62" name="Net-(SW3-Pad5)">
+      <node ref="U15" pin="12"/>
+      <node ref="SW3" pin="5"/>
+    </net>
+    <net code="63" name="/Pulse-pause timer 1 de 2/PU10">
+      <node ref="RN7" pin="7"/>
       <node ref="U14" pin="1"/>
-      <node ref="RN2" pin="13"/>
+      <node ref="SW3" pin="11"/>
     </net>
-    <net code="212" name="/Pulse-pause timer 1 de 2/U2">
+    <net code="64" name="/Pulse-pause timer 1 de 2/PPU2">
+      <node ref="U19" pin="11"/>
+      <node ref="U18" pin="10"/>
+    </net>
+    <net code="65" name="/Pulse-pause timer 1 de 2/PPU3">
+      <node ref="U18" pin="4"/>
+      <node ref="U19" pin="9"/>
+    </net>
+    <net code="66" name="/Pulse-pause timer 1 de 2/PPU4">
+      <node ref="U18" pin="3"/>
+      <node ref="U19" pin="10"/>
+    </net>
+    <net code="67" name="/Pulse-pause timer 1 de 2/PU5">
+      <node ref="SW3" pin="16"/>
+      <node ref="RN7" pin="2"/>
+      <node ref="U17" pin="13"/>
+    </net>
+    <net code="68" name="Net-(SW4-Pad2)">
+      <node ref="SW4" pin="2"/>
+      <node ref="U15" pin="7"/>
+    </net>
+    <net code="69" name="Net-(SW4-Pad1)">
+      <node ref="U15" pin="9"/>
+      <node ref="SW4" pin="1"/>
+    </net>
+    <net code="70" name="/Pulse-pause timer 1 de 2/PU6">
+      <node ref="RN7" pin="3"/>
+      <node ref="SW3" pin="15"/>
+      <node ref="U17" pin="9"/>
+    </net>
+    <net code="71" name="/Pulse-pause timer 1 de 2/PU7">
+      <node ref="RN7" pin="4"/>
+      <node ref="SW3" pin="14"/>
+      <node ref="U14" pin="13"/>
+    </net>
+    <net code="72" name="/Pulse-pause timer 1 de 2/RSTPA">
+      <node ref="U8" pin="2"/>
+      <node ref="C3" pin="2"/>
+      <node ref="U8" pin="1"/>
+      <node ref="U3" pin="11"/>
+      <node ref="U1" pin="11"/>
+    </net>
+    <net code="73" name="/Pulse-pause timer 1 de 2/&amp;PUA1-12">
+      <node ref="U8" pin="13"/>
+      <node ref="U8" pin="4"/>
+    </net>
+    <net code="74" name="/Pulse-pause timer 1 de 2/500ms">
+      <node ref="U4" pin="3"/>
+      <node ref="U7" pin="3"/>
+    </net>
+    <net code="75" name="Net-(U4-Pad9)">
+      <node ref="U4" pin="9"/>
+    </net>
+    <net code="76" name="Net-(U4-Pad7)">
+      <node ref="U4" pin="7"/>
+    </net>
+    <net code="77" name="Net-(U4-Pad6)">
+      <node ref="U4" pin="6"/>
+    </net>
+    <net code="78" name="Net-(U4-Pad5)">
+      <node ref="U4" pin="5"/>
+    </net>
+    <net code="79" name="Net-(U4-Pad4)">
+      <node ref="U4" pin="4"/>
+    </net>
+    <net code="80" name="/Pulse-pause timer 1 de 2/&amp;PPA5-12">
+      <node ref="U1" pin="12"/>
+      <node ref="U1" pin="10"/>
+    </net>
+    <net code="81" name="Net-(U4-Pad2)">
+      <node ref="U4" pin="2"/>
+    </net>
+    <net code="82" name="Net-(U4-Pad15)">
+      <node ref="U4" pin="15"/>
+    </net>
+    <net code="83" name="Net-(U4-Pad14)">
+      <node ref="U4" pin="14"/>
+    </net>
+    <net code="84" name="Net-(U4-Pad13)">
+      <node ref="U4" pin="13"/>
+    </net>
+    <net code="85" name="Net-(C1-Pad1)">
+      <node ref="U4" pin="11"/>
+      <node ref="C1" pin="1"/>
+      <node ref="R1" pin="1"/>
+      <node ref="Y1" pin="1"/>
+    </net>
+    <net code="86" name="Net-(U4-Pad1)">
+      <node ref="U4" pin="1"/>
+    </net>
+    <net code="87" name="/Pulse-pause timer 1 de 2/PU8">
+      <node ref="U14" pin="9"/>
+      <node ref="SW3" pin="13"/>
+      <node ref="RN7" pin="5"/>
+    </net>
+    <net code="88" name="/Pulse-pause timer 1 de 2/PU9">
       <node ref="U14" pin="5"/>
-      <node ref="RN2" pin="12"/>
-      <node ref="U31" pin="22"/>
+      <node ref="RN7" pin="6"/>
+      <node ref="SW3" pin="12"/>
     </net>
-    <net code="213" name="/Pulse-pause timer 1 de 2/U3">
-      <node ref="U14" pin="8"/>
-      <node ref="U31" pin="23"/>
-      <node ref="RN2" pin="11"/>
+    <net code="89" name="/Pulse-pause timer 1 de 2/PU11">
+      <node ref="SW3" pin="10"/>
+      <node ref="RN7" pin="8"/>
+      <node ref="U17" pin="5"/>
     </net>
-    <net code="214" name="/Pulse-pause timer 1 de 2/U4">
-      <node ref="RN2" pin="10"/>
-      <node ref="U14" pin="12"/>
-      <node ref="U31" pin="24"/>
-    </net>
-    <net code="215" name="/Pulse-pause timer 1 de 2/U5">
-      <node ref="RN2" pin="9"/>
-      <node ref="U31" pin="25"/>
+    <net code="90" name="/Pulse-pause timer 1 de 2/PU12">
+      <node ref="RN7" pin="9"/>
+      <node ref="SW3" pin="9"/>
       <node ref="U17" pin="1"/>
     </net>
+    <net code="91" name="/Pulse-pause timer 1 de 2/&amp;PPA1-4">
+      <node ref="U11" pin="1"/>
+      <node ref="U1" pin="13"/>
+    </net>
+    <net code="92" name="/Pulse-pause timer 1 de 2/PPU1">
+      <node ref="U18" pin="11"/>
+      <node ref="U19" pin="12"/>
+    </net>
+    <net code="93" name="Net-(SW3-Pad3)">
+      <node ref="U15" pin="4"/>
+      <node ref="SW3" pin="3"/>
+    </net>
+    <net code="94" name="Net-(SW3-Pad1)">
+      <node ref="U15" pin="3"/>
+      <node ref="SW3" pin="1"/>
+    </net>
+    <net code="95" name="Net-(SW3-Pad2)">
+      <node ref="U15" pin="2"/>
+      <node ref="SW3" pin="2"/>
+    </net>
+    <net code="96" name="Net-(SW3-Pad4)">
+      <node ref="SW3" pin="4"/>
+      <node ref="U15" pin="13"/>
+    </net>
+    <net code="97" name="/Pulse-pause timer 1 de 2/RSTPU">
+      <node ref="U13" pin="11"/>
+      <node ref="U8" pin="5"/>
+      <node ref="U15" pin="11"/>
+      <node ref="U8" pin="6"/>
+      <node ref="C5" pin="2"/>
+    </net>
+    <net code="99" name="/Pulse-pause timer 1 de 2/PA8">
+      <node ref="RN5" pin="5"/>
+      <node ref="U2" pin="9"/>
+      <node ref="SW1" pin="13"/>
+    </net>
+    <net code="100" name="/Pulse-pause timer 1 de 2/PA10">
+      <node ref="SW1" pin="11"/>
+      <node ref="U2" pin="1"/>
+      <node ref="RN5" pin="7"/>
+    </net>
+    <net code="101" name="/Pulse-pause timer 1 de 2/PA11">
+      <node ref="U6" pin="5"/>
+      <node ref="SW1" pin="10"/>
+      <node ref="RN5" pin="8"/>
+    </net>
+    <net code="102" name="/Pulse-pause timer 1 de 2/PA12">
+      <node ref="RN5" pin="9"/>
+      <node ref="U6" pin="1"/>
+      <node ref="SW1" pin="9"/>
+    </net>
+    <net code="103" name="/Pulse-pause timer 1 de 2/&amp;PPU1-4">
+      <node ref="U19" pin="1"/>
+      <node ref="U13" pin="13"/>
+    </net>
+    <net code="104" name="/Pulse-pause timer 1 de 2/PU1">
+      <node ref="RN8" pin="2"/>
+      <node ref="U18" pin="12"/>
+      <node ref="SW4" pin="8"/>
+    </net>
+    <net code="105" name="/Pulse-pause timer 1 de 2/&amp;PPU5-12">
+      <node ref="U13" pin="10"/>
+      <node ref="U13" pin="12"/>
+    </net>
+    <net code="106" name="Net-(U13-Pad3)">
+      <node ref="U13" pin="6"/>
+      <node ref="U13" pin="3"/>
+      <node ref="U13" pin="5"/>
+    </net>
+    <net code="107" name="Net-(U13-Pad4)">
+      <node ref="U13" pin="4"/>
+      <node ref="U15" pin="10"/>
+    </net>
+    <net code="108" name="/Pulse-pause timer 1 de 2/PU4">
+      <node ref="SW4" pin="5"/>
+      <node ref="RN8" pin="3"/>
+      <node ref="U18" pin="2"/>
+    </net>
+    <net code="109" name="/Pulse-pause timer 1 de 2/PU3">
+      <node ref="RN8" pin="4"/>
+      <node ref="SW4" pin="6"/>
+      <node ref="U18" pin="6"/>
+    </net>
+    <net code="110" name="/Pulse-pause timer 1 de 2/PU2">
+      <node ref="SW4" pin="7"/>
+      <node ref="U18" pin="8"/>
+      <node ref="RN8" pin="5"/>
+    </net>
+    <net code="111" name="Net-(J2-Pad4)">
+      <node ref="J2" pin="4"/>
+      <node ref="K1" pin="11"/>
+    </net>
+    <net code="112" name="Net-(K1-Pad12)">
+      <node ref="K1" pin="12"/>
+    </net>
+    <net code="113" name="Net-(2A2-Pad2)">
+      <node ref="2A2" pin="2"/>
+      <node ref="K1" pin="14"/>
+    </net>
+    <net code="114" name="Net-(K1-Pad22)">
+      <node ref="K1" pin="22"/>
+    </net>
+    <net code="115" name="Net-(J2-Pad2)">
+      <node ref="K1" pin="21"/>
+      <node ref="J2" pin="2"/>
+    </net>
+    <net code="116" name="Net-(D1-Pad2)">
+      <node ref="R4" pin="1"/>
+      <node ref="D1" pin="2"/>
+    </net>
+    <net code="118" name="Net-(U9-Pad1)">
+      <node ref="U9" pin="1"/>
+    </net>
+    <net code="119" name="Net-(U9-Pad12)">
+      <node ref="U9" pin="12"/>
+    </net>
+    <net code="120" name="Net-(U9-Pad13)">
+      <node ref="U9" pin="13"/>
+    </net>
+    <net code="121" name="Net-(U9-Pad14)">
+      <node ref="U9" pin="14"/>
+    </net>
+    <net code="122" name="Net-(U9-Pad15)">
+      <node ref="U9" pin="15"/>
+    </net>
+    <net code="123" name="Net-(U12-Pad12)">
+      <node ref="U9" pin="2"/>
+      <node ref="U12" pin="12"/>
+    </net>
+    <net code="124" name="Net-(U12-Pad11)">
+      <node ref="U9" pin="3"/>
+      <node ref="U12" pin="11"/>
+    </net>
+    <net code="125" name="Net-(U9-Pad4)">
+      <node ref="U9" pin="4"/>
+    </net>
+    <net code="126" name="Net-(U12-Pad10)">
+      <node ref="U12" pin="10"/>
+      <node ref="U9" pin="5"/>
+    </net>
+    <net code="127" name="Net-(2A1-Pad2)">
+      <node ref="K1" pin="24"/>
+      <node ref="2A1" pin="2"/>
+    </net>
+    <net code="128" name="Net-(D2-Pad2)">
+      <node ref="Q1" pin="3"/>
+      <node ref="D2" pin="2"/>
+      <node ref="K1" pin="A1"/>
+    </net>
+    <net code="129" name="Net-(C2-Pad1)">
+      <node ref="C2" pin="1"/>
+      <node ref="R1" pin="2"/>
+      <node ref="Y1" pin="2"/>
+      <node ref="U4" pin="10"/>
+    </net>
+    <net code="130" name="Net-(Q1-Pad2)">
+      <node ref="Q1" pin="2"/>
+      <node ref="R2" pin="1"/>
+    </net>
+    <net code="131" name="/Pulse-pause timer 1 de 2/PULSE_ENABLE">
+      <node ref="U8" pin="12"/>
+      <node ref="U13" pin="2"/>
+      <node ref="R2" pin="2"/>
+      <node ref="R3" pin="2"/>
+      <node ref="U8" pin="10"/>
+    </net>
+    <net code="132" name="Net-(F1-Pad1)">
+      <node ref="J1" pin="1"/>
+      <node ref="F1" pin="1"/>
+    </net>
+    <net code="133" name="/Pulse-pause timer 1 de 2/CLK-PAUSE">
+      <node ref="JP2" pin="2"/>
+      <node ref="U1" pin="1"/>
+    </net>
+    <net code="134" name="/Pulse-pause timer 1 de 2/PA1">
+      <node ref="U10" pin="12"/>
+      <node ref="RN6" pin="2"/>
+      <node ref="SW2" pin="8"/>
+    </net>
+    <net code="135" name="/Pulse-pause timer 1 de 2/PA2">
+      <node ref="U10" pin="8"/>
+      <node ref="SW2" pin="7"/>
+      <node ref="RN6" pin="5"/>
+    </net>
+    <net code="136" name="/Pulse-pause timer 1 de 2/PA3">
+      <node ref="U10" pin="6"/>
+      <node ref="SW2" pin="6"/>
+      <node ref="RN6" pin="4"/>
+    </net>
+    <net code="137" name="/Pulse-pause timer 1 de 2/PA4">
+      <node ref="U10" pin="2"/>
+      <node ref="RN6" pin="3"/>
+      <node ref="SW2" pin="5"/>
+    </net>
+    <net code="138" name="Net-(U12-Pad9)">
+      <node ref="U12" pin="9"/>
+      <node ref="U9" pin="6"/>
+    </net>
+    <net code="139" name="Net-(U9-Pad7)">
+      <node ref="U9" pin="7"/>
+    </net>
+    <net code="141" name="/Pulse-pause timer 1 de 2/PAUSE_ENABLE">
+      <node ref="U8" pin="11"/>
+      <node ref="U8" pin="9"/>
+      <node ref="U1" pin="2"/>
+    </net>
+    <net code="142" name="Net-(U9-Pad9)">
+      <node ref="U9" pin="9"/>
+    </net>
+    <net code="143" name="/Pulse-pause timer 1 de 2/1sec">
+      <node ref="JP2" pin="3"/>
+      <node ref="JP1" pin="3"/>
+      <node ref="U9" pin="10"/>
+      <node ref="U7" pin="1"/>
+    </net>
+    <net code="145" name="/Pulse-pause timer 1 de 2/60sec">
+      <node ref="U12" pin="1"/>
+      <node ref="JP2" pin="1"/>
+      <node ref="JP1" pin="1"/>
+      <node ref="U9" pin="11"/>
+    </net>
+    <net code="146" name="Net-(JP33-Pad2)">
+      <node ref="JP33" pin="2"/>
+      <node ref="U20" pin="17"/>
+    </net>
+    <net code="147" name="Net-(JP31-Pad2)">
+      <node ref="U20" pin="15"/>
+      <node ref="JP31" pin="2"/>
+    </net>
+    <net code="148" name="Net-(U20-Pad11)">
+      <node ref="U20" pin="11"/>
+    </net>
+    <net code="149" name="Net-(U20-Pad14)">
+      <node ref="U20" pin="14"/>
+    </net>
+    <net code="150" name="Net-(J3-Pad35)">
+      <node ref="J3" pin="35"/>
+    </net>
+    <net code="151" name="Net-(J3-Pad12)">
+      <node ref="J3" pin="12"/>
+    </net>
+    <net code="152" name="Net-(J3-Pad36)">
+      <node ref="J3" pin="36"/>
+    </net>
+    <net code="153" name="Net-(J3-Pad10)">
+      <node ref="J3" pin="10"/>
+    </net>
+    <net code="154" name="Net-(J3-Pad8)">
+      <node ref="J3" pin="8"/>
+    </net>
+    <net code="155" name="Net-(J3-Pad28)">
+      <node ref="J3" pin="28"/>
+    </net>
+    <net code="156" name="Net-(J3-Pad27)">
+      <node ref="J3" pin="27"/>
+    </net>
+    <net code="157" name="Net-(JP36-Pad2)">
+      <node ref="JP36" pin="2"/>
+      <node ref="U21" pin="17"/>
+    </net>
+    <net code="158" name="Net-(J3-Pad26)">
+      <node ref="J3" pin="26"/>
+    </net>
+    <net code="159" name="Net-(J3-Pad31)">
+      <node ref="J3" pin="31"/>
+    </net>
+    <net code="160" name="Net-(J3-Pad19)">
+      <node ref="J3" pin="19"/>
+    </net>
+    <net code="161" name="Net-(J3-Pad2)">
+      <node ref="J3" pin="2"/>
+    </net>
+    <net code="162" name="Net-(J3-Pad20)">
+      <node ref="J3" pin="20"/>
+    </net>
+    <net code="163" name="Net-(J3-Pad21)">
+      <node ref="J3" pin="21"/>
+    </net>
+    <net code="164" name="Net-(J3-Pad22)">
+      <node ref="J3" pin="22"/>
+    </net>
+    <net code="165" name="Net-(J3-Pad23)">
+      <node ref="J3" pin="23"/>
+    </net>
+    <net code="166" name="Net-(J3-Pad24)">
+      <node ref="J3" pin="24"/>
+    </net>
+    <net code="167" name="Net-(J3-Pad25)">
+      <node ref="J3" pin="25"/>
+    </net>
+    <net code="168" name="Net-(J3-Pad29)">
+      <node ref="J3" pin="29"/>
+    </net>
+    <net code="169" name="Net-(J3-Pad30)">
+      <node ref="J3" pin="30"/>
+    </net>
+    <net code="170" name="Net-(J3-Pad18)">
+      <node ref="J3" pin="18"/>
+    </net>
+    <net code="171" name="Net-(J3-Pad32)">
+      <node ref="J3" pin="32"/>
+    </net>
+    <net code="172" name="Net-(J3-Pad33)">
+      <node ref="J3" pin="33"/>
+    </net>
+    <net code="173" name="Net-(J3-Pad34)">
+      <node ref="J3" pin="34"/>
+    </net>
+    <net code="174" name="Net-(J3-Pad37)">
+      <node ref="J3" pin="37"/>
+    </net>
+    <net code="175" name="Net-(J3-Pad38)">
+      <node ref="J3" pin="38"/>
+    </net>
+    <net code="176" name="Net-(J3-Pad39)">
+      <node ref="J3" pin="39"/>
+    </net>
+    <net code="177" name="Net-(J3-Pad4)">
+      <node ref="J3" pin="4"/>
+    </net>
+    <net code="178" name="Net-(J3-Pad40)">
+      <node ref="J3" pin="40"/>
+    </net>
+    <net code="179" name="Net-(J3-Pad6)">
+      <node ref="J3" pin="6"/>
+    </net>
+    <net code="180" name="Net-(J3-Pad7)">
+      <node ref="J3" pin="7"/>
+    </net>
+    <net code="181" name="Net-(U20-Pad5)">
+      <node ref="U20" pin="5"/>
+    </net>
+    <net code="182" name="Net-(U20-Pad19)">
+      <node ref="U20" pin="19"/>
+    </net>
+    <net code="183" name="Net-(U20-Pad20)">
+      <node ref="U20" pin="20"/>
+    </net>
+    <net code="184" name="Net-(U20-Pad18)">
+      <node ref="U20" pin="18"/>
+    </net>
+    <net code="185" name="Net-(U20-Pad6)">
+      <node ref="U20" pin="6"/>
+    </net>
+    <net code="186" name="Net-(U20-Pad7)">
+      <node ref="U20" pin="7"/>
+    </net>
+    <net code="187" name="Net-(U20-Pad8)">
+      <node ref="U20" pin="8"/>
+    </net>
+    <net code="188" name="Net-(J3-Pad1)">
+      <node ref="J3" pin="1"/>
+    </net>
+    <net code="189" name="Net-(J3-Pad11)">
+      <node ref="J3" pin="11"/>
+    </net>
+    <net code="190" name="Net-(J3-Pad13)">
+      <node ref="J3" pin="13"/>
+    </net>
+    <net code="191" name="Net-(J3-Pad14)">
+      <node ref="J3" pin="14"/>
+    </net>
+    <net code="192" name="Net-(J3-Pad15)">
+      <node ref="J3" pin="15"/>
+    </net>
+    <net code="193" name="Net-(J3-Pad16)">
+      <node ref="J3" pin="16"/>
+    </net>
+    <net code="194" name="Net-(J3-Pad17)">
+      <node ref="J3" pin="17"/>
+    </net>
+    <net code="195" name="Net-(U21-Pad11)">
+      <node ref="U21" pin="11"/>
+    </net>
+    <net code="196" name="Net-(U21-Pad14)">
+      <node ref="U21" pin="14"/>
+    </net>
+    <net code="197" name="Net-(JP34-Pad2)">
+      <node ref="JP34" pin="2"/>
+      <node ref="U21" pin="15"/>
+    </net>
+    <net code="198" name="Net-(U21-Pad18)">
+      <node ref="U21" pin="18"/>
+    </net>
+    <net code="199" name="Net-(U21-Pad19)">
+      <node ref="U21" pin="19"/>
+    </net>
+    <net code="200" name="Net-(U21-Pad20)">
+      <node ref="U21" pin="20"/>
+    </net>
+    <net code="201" name="Net-(U21-Pad5)">
+      <node ref="U21" pin="5"/>
+    </net>
+    <net code="202" name="Net-(U21-Pad6)">
+      <node ref="U21" pin="6"/>
+    </net>
+    <net code="203" name="Net-(U21-Pad7)">
+      <node ref="U21" pin="7"/>
+    </net>
+    <net code="204" name="Net-(U21-Pad8)">
+      <node ref="U21" pin="8"/>
+    </net>
+    <net code="205" name="/Pulse-pause timer 2 de 2/SCK">
+      <node ref="J3" pin="5"/>
+      <node ref="U21" pin="12"/>
+      <node ref="U20" pin="12"/>
+    </net>
+    <net code="206" name="/Pulse-pause timer 2 de 2/SDA">
+      <node ref="U21" pin="13"/>
+      <node ref="U20" pin="13"/>
+      <node ref="J3" pin="3"/>
+    </net>
+    <net code="207" name="Net-(JP32-Pad2)">
+      <node ref="JP32" pin="2"/>
+      <node ref="U20" pin="16"/>
+    </net>
+    <net code="208" name="Net-(JP35-Pad2)">
+      <node ref="JP35" pin="2"/>
+      <node ref="U21" pin="16"/>
+    </net>
+    <net code="210" name="/Pulse-pause timer 1 de 2/P1">
+      <node ref="RN2" pin="9"/>
+      <node ref="U20" pin="21"/>
+      <node ref="U10" pin="13"/>
+    </net>
+    <net code="211" name="/Pulse-pause timer 1 de 2/U1">
+      <node ref="U21" pin="21"/>
+      <node ref="U18" pin="13"/>
+      <node ref="RN4" pin="9"/>
+    </net>
+    <net code="212" name="/Pulse-pause timer 1 de 2/U2">
+      <node ref="U18" pin="9"/>
+      <node ref="U21" pin="22"/>
+      <node ref="RN4" pin="8"/>
+    </net>
+    <net code="213" name="/Pulse-pause timer 1 de 2/U3">
+      <node ref="U21" pin="23"/>
+      <node ref="U18" pin="5"/>
+      <node ref="RN4" pin="7"/>
+    </net>
+    <net code="214" name="/Pulse-pause timer 1 de 2/U4">
+      <node ref="RN4" pin="6"/>
+      <node ref="U21" pin="24"/>
+      <node ref="U18" pin="1"/>
+    </net>
+    <net code="215" name="/Pulse-pause timer 1 de 2/U5">
+      <node ref="U17" pin="12"/>
+      <node ref="U21" pin="25"/>
+      <node ref="RN4" pin="5"/>
+    </net>
     <net code="216" name="/Pulse-pause timer 1 de 2/U6">
-      <node ref="RN2" pin="8"/>
-      <node ref="U17" pin="5"/>
-      <node ref="U31" pin="26"/>
+      <node ref="U17" pin="8"/>
+      <node ref="U21" pin="26"/>
+      <node ref="RN4" pin="4"/>
     </net>
     <net code="217" name="/Pulse-pause timer 1 de 2/U7">
-      <node ref="RN2" pin="7"/>
-      <node ref="U17" pin="8"/>
-      <node ref="U31" pin="27"/>
+      <node ref="RN4" pin="3"/>
+      <node ref="U21" pin="27"/>
+      <node ref="U14" pin="12"/>
     </net>
     <net code="218" name="/Pulse-pause timer 1 de 2/U8">
-      <node ref="RN2" pin="6"/>
-      <node ref="U31" pin="28"/>
-      <node ref="U17" pin="12"/>
+      <node ref="U14" pin="8"/>
+      <node ref="RN4" pin="2"/>
+      <node ref="U21" pin="28"/>
     </net>
     <net code="219" name="/Pulse-pause timer 1 de 2/U9">
-      <node ref="RN2" pin="5"/>
-      <node ref="U18" pin="1"/>
-      <node ref="U31" pin="1"/>
+      <node ref="U21" pin="1"/>
+      <node ref="U14" pin="6"/>
+      <node ref="RN3" pin="5"/>
     </net>
     <net code="220" name="/Pulse-pause timer 1 de 2/U10">
-      <node ref="U31" pin="2"/>
-      <node ref="U18" pin="5"/>
-      <node ref="RN2" pin="4"/>
+      <node ref="RN3" pin="4"/>
+      <node ref="U21" pin="2"/>
+      <node ref="U14" pin="2"/>
     </net>
     <net code="221" name="/Pulse-pause timer 1 de 2/U11">
-      <node ref="U18" pin="8"/>
-      <node ref="U31" pin="3"/>
-      <node ref="RN2" pin="3"/>
+      <node ref="U21" pin="3"/>
+      <node ref="RN3" pin="3"/>
+      <node ref="U17" pin="6"/>
     </net>
     <net code="222" name="/Pulse-pause timer 1 de 2/U12">
-      <node ref="U18" pin="12"/>
-      <node ref="U31" pin="4"/>
-      <node ref="RN2" pin="2"/>
+      <node ref="RN3" pin="2"/>
+      <node ref="U21" pin="4"/>
+      <node ref="U17" pin="2"/>
     </net>
     <net code="223" name="/Pulse-pause timer 1 de 2/P2">
-      <node ref="RN1" pin="12"/>
-      <node ref="U30" pin="22"/>
-      <node ref="U2" pin="5"/>
+      <node ref="U20" pin="22"/>
+      <node ref="U10" pin="9"/>
+      <node ref="RN2" pin="8"/>
     </net>
     <net code="224" name="/Pulse-pause timer 1 de 2/P3">
-      <node ref="U30" pin="23"/>
-      <node ref="U2" pin="8"/>
-      <node ref="RN1" pin="11"/>
+      <node ref="U10" pin="5"/>
+      <node ref="U20" pin="23"/>
+      <node ref="RN2" pin="7"/>
     </net>
     <net code="225" name="/Pulse-pause timer 1 de 2/P4">
-      <node ref="RN1" pin="10"/>
-      <node ref="U30" pin="24"/>
-      <node ref="U2" pin="12"/>
+      <node ref="U20" pin="24"/>
+      <node ref="U10" pin="1"/>
+      <node ref="RN2" pin="6"/>
     </net>
     <net code="226" name="/Pulse-pause timer 1 de 2/P5">
-      <node ref="U6" pin="1"/>
-      <node ref="U30" pin="25"/>
-      <node ref="RN1" pin="9"/>
-    </net>
-    <net code="227" name="/Pulse-pause timer 1 de 2/P6">
-      <node ref="RN1" pin="8"/>
-      <node ref="U30" pin="26"/>
-      <node ref="U6" pin="5"/>
-    </net>
-    <net code="228" name="/Pulse-pause timer 1 de 2/P7">
-      <node ref="U6" pin="8"/>
-      <node ref="U30" pin="27"/>
-      <node ref="RN1" pin="7"/>
-    </net>
-    <net code="229" name="/Pulse-pause timer 1 de 2/P8">
-      <node ref="U30" pin="28"/>
-      <node ref="RN1" pin="6"/>
+      <node ref="RN2" pin="5"/>
+      <node ref="U20" pin="25"/>
       <node ref="U6" pin="12"/>
     </net>
+    <net code="227" name="/Pulse-pause timer 1 de 2/P6">
+      <node ref="RN2" pin="4"/>
+      <node ref="U6" pin="8"/>
+      <node ref="U20" pin="26"/>
+    </net>
+    <net code="228" name="/Pulse-pause timer 1 de 2/P7">
+      <node ref="U2" pin="12"/>
+      <node ref="U20" pin="27"/>
+      <node ref="RN2" pin="3"/>
+    </net>
+    <net code="229" name="/Pulse-pause timer 1 de 2/P8">
+      <node ref="U2" pin="8"/>
+      <node ref="U20" pin="28"/>
+      <node ref="RN2" pin="2"/>
+    </net>
     <net code="230" name="/Pulse-pause timer 1 de 2/P9">
+      <node ref="U2" pin="6"/>
       <node ref="RN1" pin="5"/>
-      <node ref="U10" pin="1"/>
-      <node ref="U30" pin="1"/>
+      <node ref="U20" pin="1"/>
     </net>
     <net code="231" name="/Pulse-pause timer 1 de 2/P10">
-      <node ref="U30" pin="2"/>
-      <node ref="U10" pin="5"/>
+      <node ref="U2" pin="2"/>
+      <node ref="U20" pin="2"/>
       <node ref="RN1" pin="4"/>
     </net>
     <net code="232" name="/Pulse-pause timer 1 de 2/P11">
-      <node ref="U10" pin="8"/>
+      <node ref="U20" pin="3"/>
       <node ref="RN1" pin="3"/>
-      <node ref="U30" pin="3"/>
+      <node ref="U6" pin="6"/>
     </net>
     <net code="233" name="/Pulse-pause timer 1 de 2/P12">
-      <node ref="U10" pin="12"/>
+      <node ref="U6" pin="2"/>
+      <node ref="U20" pin="4"/>
       <node ref="RN1" pin="2"/>
-      <node ref="U30" pin="4"/>
     </net>
   </nets>
 </export>
