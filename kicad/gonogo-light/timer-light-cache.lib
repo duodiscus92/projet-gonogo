@@ -1,11 +1,30 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# 4xxx_4011
+# timer-light-rescue_1N4001-Diode
 #
-DEF 4xxx_4011 U 0 40 Y Y 5 L N
+DEF timer-light-rescue_1N4001-Diode D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "timer-light-rescue_1N4001-Diode" 0 -100 50 H V C CNN
+F2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" 0 -175 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ D*DO?41*
+$ENDFPLIST
+DRAW
+P 2 0 1 10 -50 50 -50 -50 N
+P 2 0 1 0 50 0 -50 0 N
+P 4 0 1 10 50 50 50 -50 -50 0 50 50 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# timer-light-rescue_4011-4xxx
+#
+DEF timer-light-rescue_4011-4xxx U 0 40 Y Y 5 L N
 F0 "U" 0 50 50 H V C CNN
-F1 "4xxx_4011" 0 -50 50 H V C CNN
+F1 "timer-light-rescue_4011-4xxx" 0 -50 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -74,11 +93,11 @@ X ~ 13 -300 -100 170 R 50 50 4 2 I I
 ENDDRAW
 ENDDEF
 #
-# 4xxx_4012
+# timer-light-rescue_4012-4xxx
 #
-DEF 4xxx_4012 U 0 40 Y Y 3 L N
+DEF timer-light-rescue_4012-4xxx U 0 40 Y Y 3 L N
 F0 "U" 0 50 50 H V C CNN
-F1 "4xxx_4012" 0 -50 50 H V C CNN
+F1 "timer-light-rescue_4012-4xxx" 0 -50 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -127,11 +146,11 @@ X ~ 9 -300 150 150 R 50 50 2 2 I I
 ENDDRAW
 ENDDEF
 #
-# 4xxx_4013
+# timer-light-rescue_4013-4xxx
 #
-DEF 4xxx_4013 U 0 40 Y Y 3 L N
+DEF timer-light-rescue_4013-4xxx U 0 40 Y Y 3 L N
 F0 "U" -300 350 50 H V C CNN
-F1 "4xxx_4013" -300 -350 50 H V C CNN
+F1 "timer-light-rescue_4013-4xxx" -300 -350 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -160,11 +179,11 @@ X D 9 -300 100 100 R 50 50 2 1 I
 ENDDRAW
 ENDDEF
 #
-# 4xxx_4040
+# timer-light-rescue_4040-4xxx
 #
-DEF 4xxx_4040 U 0 40 Y Y 1 L N
+DEF timer-light-rescue_4040-4xxx U 0 40 Y Y 1 L N
 F0 "U" -300 650 50 H V C CNN
-F1 "4xxx_4040" -300 -750 50 H V C CNN
+F1 "timer-light-rescue_4040-4xxx" -300 -750 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -191,11 +210,39 @@ X Q0 9 500 500 200 L 50 50 1 0 O
 ENDDRAW
 ENDDEF
 #
-# 4xxx_IEEE_4068
+# timer-light-rescue_4060-djet-DJET
 #
-DEF 4xxx_IEEE_4068 U 0 30 Y Y 1 F N
+DEF timer-light-rescue_4060-djet-DJET U 0 40 Y Y 1 F N
+F0 "U" 100 900 50 H V C CNN
+F1 "timer-light-rescue_4060-djet-DJET" 250 -600 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -350 850 350 -550 0 1 0 f
+X Q12 1 450 -100 100 L 50 50 0 0 O
+X PH0 10 -450 300 100 R 50 50 0 0 B
+X /PH1 11 -450 400 100 R 50 50 0 0 B
+X CL 12 -450 -200 100 R 50 50 0 0 I
+X Q9 13 450 100 100 L 50 50 0 0 O
+X Q8 14 450 200 100 L 50 50 0 0 O
+X Q10 15 450 0 100 L 50 50 0 0 O
+X VCC 16 0 950 100 D 50 50 0 0 W
+X Q13 2 450 -200 100 L 50 50 0 0 O
+X Q14 3 450 -300 100 L 50 50 0 0 O
+X Q6 4 450 400 100 L 50 50 0 0 O
+X Q5 5 450 500 100 L 50 50 0 0 O
+X Q7 6 450 300 100 L 50 50 0 0 O
+X Q4 7 450 600 100 L 50 50 0 0 O
+X VSS 8 0 -650 100 U 50 50 0 0 W
+X /PH0 9 -450 200 100 R 50 50 0 0 B
+ENDDRAW
+ENDDEF
+#
+# timer-light-rescue_4068-4xxx_IEEE
+#
+DEF timer-light-rescue_4068-4xxx_IEEE U 0 30 Y Y 1 F N
 F0 "U" -200 450 50 H V C CNN
-F1 "4xxx_IEEE_4068" 150 450 50 H V C CNN
+F1 "timer-light-rescue_4068-4xxx_IEEE" 150 450 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -216,65 +263,33 @@ X E 9 -500 -50 300 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# Connector_Screw_Terminal_01x02
+# timer-light-rescue_BC107-Transistor_BJT
 #
-DEF Connector_Screw_Terminal_01x02 J 0 40 Y N 1 F N
-F0 "J" 0 100 50 H V C CNN
-F1 "Connector_Screw_Terminal_01x02" 0 -200 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
+DEF timer-light-rescue_BC107-Transistor_BJT Q 0 0 Y N 1 F N
+F0 "Q" 200 75 50 H V L CNN
+F1 "timer-light-rescue_BC107-Transistor_BJT" 200 0 50 H V L CNN
+F2 "Package_TO_SOT_THT:TO-18-3" 200 -75 50 H I L CIN
+F3 "" 0 0 50 H I L CNN
 $FPLIST
- TerminalBlock*:*
+ TO?18*
 $ENDFPLIST
 DRAW
-C 0 -100 25 1 1 6 N
-C 0 0 25 1 1 6 N
-S -50 50 50 -150 1 1 10 f
-P 2 1 1 6 -21 -87 13 -120 N
-P 2 1 1 6 -21 13 13 -20 N
-P 2 1 1 6 -14 -80 20 -113 N
-P 2 1 1 6 -14 20 20 -13 N
-X Pin_1 1 -200 0 150 R 50 50 1 1 P
-X Pin_2 2 -200 -100 150 R 50 50 1 1 P
+C 50 0 111 0 1 10 N
+P 2 0 1 0 25 25 100 100 N
+P 3 0 1 0 25 -25 100 -100 100 -100 N
+P 3 0 1 20 25 75 25 -75 25 -75 N
+P 5 0 1 0 50 -70 70 -50 90 -90 50 -70 50 -70 F
+X E 1 100 -200 100 U 50 50 1 1 P
+X B 2 -200 0 225 R 50 50 1 1 I
+X C 3 100 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Screw_Terminal_01x04
+# timer-light-rescue_C-Device
 #
-DEF Connector_Screw_Terminal_01x04 J 0 40 Y N 1 F N
-F0 "J" 0 200 50 H V C CNN
-F1 "Connector_Screw_Terminal_01x04" 0 -300 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- TerminalBlock*:*
-$ENDFPLIST
-DRAW
-C 0 -200 25 1 1 6 N
-C 0 -100 25 1 1 6 N
-C 0 0 25 1 1 6 N
-C 0 100 25 1 1 6 N
-S -50 150 50 -250 1 1 10 f
-P 2 1 1 6 -21 -187 13 -220 N
-P 2 1 1 6 -21 -87 13 -120 N
-P 2 1 1 6 -21 13 13 -20 N
-P 2 1 1 6 -21 113 13 80 N
-P 2 1 1 6 -14 -180 20 -213 N
-P 2 1 1 6 -14 -80 20 -113 N
-P 2 1 1 6 -14 20 20 -13 N
-P 2 1 1 6 -14 120 20 87 N
-X Pin_1 1 -200 100 150 R 50 50 1 1 P
-X Pin_2 2 -200 0 150 R 50 50 1 1 P
-X Pin_3 3 -200 -100 150 R 50 50 1 1 P
-X Pin_4 4 -200 -200 150 R 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_C
-#
-DEF Device_C C 0 10 N Y 1 F N
+DEF timer-light-rescue_C-Device C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "Device_C" 25 -100 50 H V L CNN
+F1 "timer-light-rescue_C-Device" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -288,11 +303,11 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_CP
+# timer-light-rescue_CP-Device
 #
-DEF Device_CP C 0 10 N Y 1 F N
+DEF timer-light-rescue_CP-Device C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "Device_CP" 25 -100 50 H V L CNN
+F1 "timer-light-rescue_CP-Device" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -308,11 +323,11 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_Crystal
+# timer-light-rescue_Crystal-Device
 #
-DEF Device_Crystal Y 0 40 N N 1 F N
+DEF timer-light-rescue_Crystal-Device Y 0 40 N N 1 F N
 F0 "Y" 0 150 50 H V C CNN
-F1 "Device_Crystal" 0 -150 50 H V C CNN
+F1 "timer-light-rescue_Crystal-Device" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -329,11 +344,11 @@ X 2 2 150 0 50 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_D_Small
+# timer-light-rescue_D_Small-Device
 #
-DEF Device_D_Small D 0 10 N N 1 F N
+DEF timer-light-rescue_D_Small-Device D 0 10 N N 1 F N
 F0 "D" -50 80 50 H V L CNN
-F1 "Device_D_Small" -150 -80 50 H V L CNN
+F1 "timer-light-rescue_D_Small-Device" -150 -80 50 H V L CNN
 F2 "" 0 0 50 V I C CNN
 F3 "" 0 0 50 V I C CNN
 $FPLIST
@@ -351,11 +366,59 @@ X A 2 100 0 70 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_Fuse_Small
+# timer-light-rescue_FINDER-30.22-Relay
 #
-DEF Device_Fuse_Small F 0 10 N N 1 F N
+DEF timer-light-rescue_FINDER-30.22-Relay K 0 20 Y Y 1 F N
+F0 "K" 650 150 50 H V L CNN
+F1 "timer-light-rescue_FINDER-30.22-Relay" 650 50 50 H V L CNN
+F2 "Relay_THT:Relay_DPDT_Finder_30.22" 1350 -30 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Relay*DPDT*Finder*30.22*
+$ENDFPLIST
+DRAW
+S -600 200 600 -200 0 1 10 f
+S -525 75 -275 -75 0 1 10 N
+P 4 0 0 0 -100 200 -100 100 -75 125 -100 150 F
+P 4 0 0 0 100 200 100 100 75 125 100 150 N
+P 4 0 0 0 300 200 300 100 325 125 300 150 F
+P 4 0 0 0 500 200 500 100 475 125 500 150 N
+P 2 0 1 10 -500 -75 -300 75 N
+P 2 0 1 0 -400 -200 -400 -75 N
+P 2 0 1 0 -400 200 -400 75 N
+P 2 0 1 10 -275 0 -250 0 N
+P 2 0 1 10 -225 0 -200 0 N
+P 2 0 1 10 -175 0 -150 0 N
+P 2 0 1 10 -125 0 -100 0 N
+P 2 0 1 10 -75 0 -50 0 N
+P 2 0 1 10 -25 0 0 0 N
+P 2 0 1 20 0 -100 -75 150 N
+P 2 0 1 0 0 -100 0 -200 N
+P 2 0 1 10 25 0 50 0 N
+P 2 0 1 10 75 0 100 0 N
+P 2 0 1 10 125 0 150 0 N
+P 2 0 1 10 175 0 200 0 N
+P 2 0 1 10 225 0 250 0 N
+P 2 0 1 10 275 0 300 0 N
+P 2 0 1 10 325 0 350 0 N
+P 2 0 1 20 400 -100 325 150 N
+P 2 0 1 0 400 -100 400 -200 N
+X ~ 11 0 -300 100 U 50 50 1 1 P
+X ~ 12 -100 300 100 D 50 50 1 1 P
+X ~ 14 100 300 100 D 50 50 1 1 P
+X ~ 21 400 -300 100 U 50 50 1 1 P
+X ~ 22 300 300 100 D 50 50 1 1 P
+X ~ 24 500 300 100 D 50 50 1 1 P
+X ~ A1 -400 300 100 D 50 50 1 1 P
+X ~ A2 -400 -300 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# timer-light-rescue_Fuse_Small-Device
+#
+DEF timer-light-rescue_Fuse_Small-Device F 0 10 N N 1 F N
 F0 "F" 0 -60 50 H V C CNN
-F1 "Device_Fuse_Small" 0 60 50 H V C CNN
+F1 "timer-light-rescue_Fuse_Small-Device" 0 60 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -369,11 +432,24 @@ X ~ 2 100 0 50 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_Jumper_NC_Dual
+# timer-light-rescue_GND-power
 #
-DEF Device_Jumper_NC_Dual JP 0 30 Y N 1 F N
+DEF timer-light-rescue_GND-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "timer-light-rescue_GND-power" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# timer-light-rescue_Jumper_NC_Dual-Device
+#
+DEF timer-light-rescue_Jumper_NC_Dual-Device JP 0 30 Y N 1 F N
 F0 "JP" 50 -100 50 H V L CNN
-F1 "Device_Jumper_NC_Dual" 0 100 50 H V C BNN
+F1 "timer-light-rescue_Jumper_NC_Dual-Device" 0 100 50 H V C BNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -394,11 +470,11 @@ X 3 3 250 0 95 L 50 50 0 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_LED
+# timer-light-rescue_LED-Device
 #
-DEF Device_LED D 0 40 N N 1 F N
+DEF timer-light-rescue_LED-Device D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "Device_LED" 0 -100 50 H V C CNN
+F1 "timer-light-rescue_LED-Device" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -417,11 +493,24 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_Polyfuse_Small
+# timer-light-rescue_PWR_FLAG-power
 #
-DEF Device_Polyfuse_Small F 0 0 N Y 1 F N
+DEF timer-light-rescue_PWR_FLAG-power #FLG 0 0 N N 1 F P
+F0 "#FLG" 0 75 50 H I C CNN
+F1 "timer-light-rescue_PWR_FLAG-power" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 50 -40 75 0 100 40 75 0 50 N
+X pwr 1 0 0 0 U 50 50 0 0 w
+ENDDRAW
+ENDDEF
+#
+# timer-light-rescue_Polyfuse_Small-Device
+#
+DEF timer-light-rescue_Polyfuse_Small-Device F 0 0 N Y 1 F N
 F0 "F" -75 0 50 V V C CNN
-F1 "Device_Polyfuse_Small" 75 0 50 V V C CNN
+F1 "timer-light-rescue_Polyfuse_Small-Device" 75 0 50 V V C CNN
 F2 "" 50 -200 50 H I L CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -437,11 +526,11 @@ X ~ 2 0 -100 25 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_R
+# timer-light-rescue_R-Device
 #
-DEF Device_R R 0 0 N Y 1 F N
+DEF timer-light-rescue_R-Device R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "Device_R" 0 0 50 V V C CNN
+F1 "timer-light-rescue_R-Device" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -454,11 +543,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_R_Network04
+# timer-light-rescue_R_Network04-Device
 #
-DEF Device_R_Network04 RN 0 0 Y N 1 F N
+DEF timer-light-rescue_R_Network04-Device RN 0 0 Y N 1 F N
 F0 "RN" -300 0 50 V V C CNN
-F1 "Device_R_Network04" 200 0 50 V V C CNN
+F1 "timer-light-rescue_R_Network04-Device" 200 0 50 V V C CNN
 F2 "Resistor_THT:R_Array_SIP5" 275 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -488,11 +577,11 @@ X R4 5 100 -200 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_R_Network08
+# timer-light-rescue_R_Network08-Device
 #
-DEF Device_R_Network08 RN 0 0 Y N 1 F N
+DEF timer-light-rescue_R_Network08-Device RN 0 0 Y N 1 F N
 F0 "RN" -500 0 50 V V C CNN
-F1 "Device_R_Network08" 400 0 50 V V C CNN
+F1 "timer-light-rescue_R_Network08-Device" 400 0 50 V V C CNN
 F2 "Resistor_THT:R_Array_SIP9" 475 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -542,79 +631,11 @@ X R8 9 300 -200 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Diode_1N4001
+# timer-light-rescue_SW_DIP_x04-Switch
 #
-DEF Diode_1N4001 D 0 40 N N 1 F N
-F0 "D" 0 100 50 H V C CNN
-F1 "Diode_1N4001" 0 -100 50 H V C CNN
-F2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" 0 -175 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-ALIAS 1N4002 1N4003 1N4004 1N4005 1N4006 1N4007 BA157 BA158 BA159
-$FPLIST
- D*DO?41*
-$ENDFPLIST
-DRAW
-P 2 0 1 10 -50 50 -50 -50 N
-P 2 0 1 0 50 0 -50 0 N
-P 4 0 1 10 50 50 50 -50 -50 0 50 50 N
-X K 1 -150 0 100 R 50 50 1 1 P
-X A 2 150 0 100 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Relay_FINDER-30.22
-#
-DEF Relay_FINDER-30.22 K 0 20 Y Y 1 F N
-F0 "K" 650 150 50 H V L CNN
-F1 "Relay_FINDER-30.22" 650 50 50 H V L CNN
-F2 "Relay_THT:Relay_DPDT_Finder_30.22" 1350 -30 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Relay*DPDT*Finder*30.22*
-$ENDFPLIST
-DRAW
-S -600 200 600 -200 0 1 10 f
-S -525 75 -275 -75 0 1 10 N
-P 4 0 0 0 -100 200 -100 100 -75 125 -100 150 F
-P 4 0 0 0 100 200 100 100 75 125 100 150 N
-P 4 0 0 0 300 200 300 100 325 125 300 150 F
-P 4 0 0 0 500 200 500 100 475 125 500 150 N
-P 2 0 1 10 -500 -75 -300 75 N
-P 2 0 1 0 -400 -200 -400 -75 N
-P 2 0 1 0 -400 200 -400 75 N
-P 2 0 1 10 -275 0 -250 0 N
-P 2 0 1 10 -225 0 -200 0 N
-P 2 0 1 10 -175 0 -150 0 N
-P 2 0 1 10 -125 0 -100 0 N
-P 2 0 1 10 -75 0 -50 0 N
-P 2 0 1 10 -25 0 0 0 N
-P 2 0 1 20 0 -100 -75 150 N
-P 2 0 1 0 0 -100 0 -200 N
-P 2 0 1 10 25 0 50 0 N
-P 2 0 1 10 75 0 100 0 N
-P 2 0 1 10 125 0 150 0 N
-P 2 0 1 10 175 0 200 0 N
-P 2 0 1 10 225 0 250 0 N
-P 2 0 1 10 275 0 300 0 N
-P 2 0 1 10 325 0 350 0 N
-P 2 0 1 20 400 -100 325 150 N
-P 2 0 1 0 400 -100 400 -200 N
-X ~ 11 0 -300 100 U 50 50 1 1 P
-X ~ 12 -100 300 100 D 50 50 1 1 P
-X ~ 14 100 300 100 D 50 50 1 1 P
-X ~ 21 400 -300 100 U 50 50 1 1 P
-X ~ 22 300 300 100 D 50 50 1 1 P
-X ~ 24 500 300 100 D 50 50 1 1 P
-X ~ A1 -400 300 100 D 50 50 1 1 P
-X ~ A2 -400 -300 100 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Switch_SW_DIP_x04
-#
-DEF Switch_SW_DIP_x04 SW 0 0 Y N 1 F N
+DEF timer-light-rescue_SW_DIP_x04-Switch SW 0 0 Y N 1 F N
 F0 "SW" 0 350 50 H V C CNN
-F1 "Switch_SW_DIP_x04" 0 -250 50 H V C CNN
+F1 "timer-light-rescue_SW_DIP_x04-Switch" 0 -250 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -645,11 +666,11 @@ X ~ 8 300 200 200 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Switch_SW_DIP_x08
+# timer-light-rescue_SW_DIP_x08-Switch
 #
-DEF Switch_SW_DIP_x08 SW 0 0 Y N 1 F N
+DEF timer-light-rescue_SW_DIP_x08-Switch SW 0 0 Y N 1 F N
 F0 "SW" 0 550 50 H V C CNN
-F1 "Switch_SW_DIP_x08" 0 -450 50 H V C CNN
+F1 "timer-light-rescue_SW_DIP_x08-Switch" 0 -450 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -700,60 +721,65 @@ X ~ 9 300 -300 200 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Transistor_BJT_BC107
+# timer-light-rescue_Screw_Terminal_01x02-Connector
 #
-DEF Transistor_BJT_BC107 Q 0 0 Y N 1 F N
-F0 "Q" 200 75 50 H V L CNN
-F1 "Transistor_BJT_BC107" 200 0 50 H V L CNN
-F2 "Package_TO_SOT_THT:TO-18-3" 200 -75 50 H I L CIN
-F3 "" 0 0 50 H I L CNN
-ALIAS BC108 BC109
+DEF timer-light-rescue_Screw_Terminal_01x02-Connector J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "timer-light-rescue_Screw_Terminal_01x02-Connector" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
 $FPLIST
- TO?18*
+ TerminalBlock*:*
 $ENDFPLIST
 DRAW
-C 50 0 111 0 1 10 N
-P 2 0 1 0 25 25 100 100 N
-P 3 0 1 0 25 -25 100 -100 100 -100 N
-P 3 0 1 20 25 75 25 -75 25 -75 N
-P 5 0 1 0 50 -70 70 -50 90 -90 50 -70 50 -70 F
-X E 1 100 -200 100 U 50 50 1 1 P
-X B 2 -200 0 225 R 50 50 1 1 I
-X C 3 100 200 100 D 50 50 1 1 P
+C 0 -100 25 1 1 6 N
+C 0 0 25 1 1 6 N
+S -50 50 50 -150 1 1 10 f
+P 2 1 1 6 -21 -87 13 -120 N
+P 2 1 1 6 -21 13 13 -20 N
+P 2 1 1 6 -14 -80 20 -113 N
+P 2 1 1 6 -14 20 20 -13 N
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+X Pin_2 2 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# power_GND
+# timer-light-rescue_Screw_Terminal_01x04-Connector
 #
-DEF power_GND #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power_GND" 0 -150 50 H V C CNN
+DEF timer-light-rescue_Screw_Terminal_01x04-Connector J 0 40 Y N 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "timer-light-rescue_Screw_Terminal_01x04-Connector" 0 -300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
+$FPLIST
+ TerminalBlock*:*
+$ENDFPLIST
 DRAW
-P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
-X GND 1 0 0 0 D 50 50 1 1 W N
+C 0 -200 25 1 1 6 N
+C 0 -100 25 1 1 6 N
+C 0 0 25 1 1 6 N
+C 0 100 25 1 1 6 N
+S -50 150 50 -250 1 1 10 f
+P 2 1 1 6 -21 -187 13 -220 N
+P 2 1 1 6 -21 -87 13 -120 N
+P 2 1 1 6 -21 13 13 -20 N
+P 2 1 1 6 -21 113 13 80 N
+P 2 1 1 6 -14 -180 20 -213 N
+P 2 1 1 6 -14 -80 20 -113 N
+P 2 1 1 6 -14 20 20 -13 N
+P 2 1 1 6 -14 120 20 87 N
+X Pin_1 1 -200 100 150 R 50 50 1 1 P
+X Pin_2 2 -200 0 150 R 50 50 1 1 P
+X Pin_3 3 -200 -100 150 R 50 50 1 1 P
+X Pin_4 4 -200 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# power_PWR_FLAG
+# timer-light-rescue_VDD-power
 #
-DEF power_PWR_FLAG #FLG 0 0 N N 1 F P
-F0 "#FLG" 0 75 50 H I C CNN
-F1 "power_PWR_FLAG" 0 150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 6 0 1 0 0 0 0 50 -40 75 0 100 40 75 0 50 N
-X pwr 1 0 0 0 U 50 50 0 0 w
-ENDDRAW
-ENDDEF
-#
-# power_VDD
-#
-DEF power_VDD #PWR 0 0 Y Y 1 F P
+DEF timer-light-rescue_VDD-power #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power_VDD" 0 150 50 H V C CNN
+F1 "timer-light-rescue_VDD-power" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -761,34 +787,6 @@ P 2 0 1 0 -30 50 0 100 N
 P 2 0 1 0 0 0 0 100 N
 P 2 0 1 0 0 100 30 50 N
 X VDD 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# timer-light-rescue_4060-djet-DJET
-#
-DEF timer-light-rescue_4060-djet-DJET U 0 40 Y Y 1 F N
-F0 "U" 100 900 50 H V C CNN
-F1 "timer-light-rescue_4060-djet-DJET" 250 -600 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-S -350 850 350 -550 0 1 0 f
-X Q12 1 450 -100 100 L 50 50 0 0 O
-X PH0 10 -450 300 100 R 50 50 0 0 B
-X /PH1 11 -450 400 100 R 50 50 0 0 B
-X CL 12 -450 -200 100 R 50 50 0 0 I
-X Q9 13 450 100 100 L 50 50 0 0 O
-X Q8 14 450 200 100 L 50 50 0 0 O
-X Q10 15 450 0 100 L 50 50 0 0 O
-X VCC 16 0 950 100 D 50 50 0 0 W
-X Q13 2 450 -200 100 L 50 50 0 0 O
-X Q14 3 450 -300 100 L 50 50 0 0 O
-X Q6 4 450 400 100 L 50 50 0 0 O
-X Q5 5 450 500 100 L 50 50 0 0 O
-X Q7 6 450 300 100 L 50 50 0 0 O
-X Q4 7 450 600 100 L 50 50 0 0 O
-X VSS 8 0 -650 100 U 50 50 0 0 W
-X /PH0 9 -450 200 100 R 50 50 0 0 B
 ENDDRAW
 ENDDEF
 #

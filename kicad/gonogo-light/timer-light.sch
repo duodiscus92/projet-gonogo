@@ -5,8 +5,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "GONOGO Light"
-Date "2021-01-29"
-Rev "1"
+Date "2021-02-23"
+Rev "2"
 Comp "D'JET Conseil"
 Comment1 "Conception : Jacques Ehrlich "
 Comment2 ""
@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:Crystal Y1
+L timer-light-rescue:Crystal-Device Y1
 U 1 1 5FEA0E1D
 P 2550 1650
 F 0 "Y1" V 2504 1781 50  0000 L CNN
@@ -25,7 +25,7 @@ F 3 "~" H 2550 1650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R1
+L timer-light-rescue:R-Device R1
 U 1 1 5FEA20D0
 P 2250 1650
 F 0 "R1" H 2320 1696 50  0000 L CNN
@@ -36,7 +36,7 @@ F 3 "~" H 2250 1650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C14
+L timer-light-rescue:C-Device C14
 U 1 1 5FEA28D1
 P 1900 1500
 F 0 "C14" V 1648 1500 50  0000 C CNN
@@ -47,7 +47,7 @@ F 3 "~" H 1900 1500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C15
+L timer-light-rescue:C-Device C15
 U 1 1 5FEA3966
 P 1900 1800
 F 0 "C15" V 2050 1800 50  0000 C CNN
@@ -122,7 +122,7 @@ Wire Wire Line
 Wire Wire Line
 	6000 8750 6250 8000
 $Comp
-L Transistor_BJT:BC107 Q1
+L timer-light-rescue:BC107-Transistor_BJT Q1
 U 1 1 6063F6FA
 P 15000 5600
 F 0 "Q1" H 15190 5646 50  0000 L CNN
@@ -133,7 +133,7 @@ F 3 "http://www.b-kainka.de/Daten/Transistor/BC108.pdf" H 15000 5600 50  0001 L 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R2
+L timer-light-rescue:R-Device R2
 U 1 1 606400B2
 P 14600 5600
 F 0 "R2" V 14700 5550 50  0000 L CNN
@@ -156,7 +156,7 @@ Wire Wire Line
 Wire Wire Line
 	3700 1050 3700 1000
 $Comp
-L Connector:Screw_Terminal_01x02 J1
+L timer-light-rescue:Screw_Terminal_01x02-Connector J1
 U 1 1 60D67419
 P 14350 1000
 F 0 "J1" H 14300 800 50  0000 L CNN
@@ -172,7 +172,7 @@ Connection ~ 11200 1350
 Wire Wire Line
 	11200 1350 11000 1350
 $Comp
-L Device:C C9
+L timer-light-rescue:C-Device C9
 U 1 1 60F2895B
 P 11000 1200
 F 0 "C9" H 10900 1300 50  0000 C CNN
@@ -186,7 +186,7 @@ Connection ~ 11000 1350
 Wire Wire Line
 	11000 1350 10800 1350
 $Comp
-L Device:C C7
+L timer-light-rescue:C-Device C7
 U 1 1 60F28BF6
 P 10800 1200
 F 0 "C7" H 10700 1300 50  0000 C CNN
@@ -200,7 +200,7 @@ Connection ~ 10800 1350
 Wire Wire Line
 	10800 1350 10600 1350
 $Comp
-L Device:C C5
+L timer-light-rescue:C-Device C5
 U 1 1 60F28DF8
 P 10600 1200
 F 0 "C5" H 10500 1300 50  0000 C CNN
@@ -214,7 +214,7 @@ Connection ~ 10600 1350
 Wire Wire Line
 	10600 1350 10400 1350
 $Comp
-L Device:C C3
+L timer-light-rescue:C-Device C3
 U 1 1 60F291B6
 P 10400 1200
 F 0 "C3" H 10300 1300 50  0000 C CNN
@@ -247,7 +247,7 @@ Connection ~ 11200 1000
 Wire Wire Line
 	11200 1000 11000 1000
 $Comp
-L Device:C C11
+L timer-light-rescue:C-Device C11
 U 1 1 60F27D3E
 P 11200 1200
 F 0 "C11" H 11100 1300 50  0000 C CNN
@@ -260,7 +260,7 @@ $EndComp
 Wire Wire Line
 	10400 1350 10200 1350
 $Comp
-L Device:C C1
+L timer-light-rescue:C-Device C1
 U 1 1 6105FB01
 P 10200 1200
 F 0 "C1" H 10100 1300 50  0000 C CNN
@@ -279,7 +279,7 @@ Connection ~ 10400 1350
 Text Label 11800 1000 0    50   ~ 0
 VDD
 $Comp
-L Device:C C10
+L timer-light-rescue:C-Device C10
 U 1 1 6108CE2E
 P 11000 1500
 F 0 "C10" H 10900 1600 50  0000 C CNN
@@ -290,7 +290,7 @@ F 3 "~" H 11000 1500 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:C C8
+L timer-light-rescue:C-Device C8
 U 1 1 6108CE3A
 P 10800 1500
 F 0 "C8" H 10700 1600 50  0000 C CNN
@@ -301,7 +301,7 @@ F 3 "~" H 10800 1500 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:C C6
+L timer-light-rescue:C-Device C6
 U 1 1 6108CE46
 P 10600 1500
 F 0 "C6" H 10500 1600 50  0000 C CNN
@@ -312,7 +312,7 @@ F 3 "~" H 10600 1500 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:C C4
+L timer-light-rescue:C-Device C4
 U 1 1 6108CE52
 P 10400 1500
 F 0 "C4" H 10300 1600 50  0000 C CNN
@@ -344,7 +344,7 @@ Wire Wire Line
 Wire Wire Line
 	11200 1700 11000 1700
 $Comp
-L Device:C C12
+L timer-light-rescue:C-Device C12
 U 1 1 6108CE6A
 P 11200 1500
 F 0 "C12" H 11100 1600 50  0000 C CNN
@@ -355,7 +355,7 @@ F 3 "~" H 11200 1500 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:C C2
+L timer-light-rescue:C-Device C2
 U 1 1 6108CE75
 P 10200 1500
 F 0 "C2" H 10100 1600 50  0000 C CNN
@@ -372,7 +372,7 @@ Wire Wire Line
 Connection ~ 10400 1700
 Connection ~ 10200 1350
 $Comp
-L power:PWR_FLAG #FLG02
+L timer-light-rescue:PWR_FLAG-power #FLG02
 U 1 1 61145BDF
 P 10700 2000
 F 0 "#FLG02" H 10700 2075 50  0001 C CNN
@@ -383,7 +383,7 @@ F 3 "~" H 10700 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG01
+L timer-light-rescue:PWR_FLAG-power #FLG01
 U 1 1 61146A8E
 P 10300 2000
 F 0 "#FLG01" H 10300 2075 50  0001 C CNN
@@ -394,7 +394,7 @@ F 3 "~" H 10300 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR04
+L timer-light-rescue:GND-power #PWR04
 U 1 1 611474E4
 P 10300 2150
 F 0 "#PWR04" H 10300 1900 50  0001 C CNN
@@ -413,7 +413,7 @@ PULSE_ENABLE
 Text Label 6550 8600 3    50   ~ 0
 PAUSE_ENABLE
 $Comp
-L power:VDD #PWR05
+L timer-light-rescue:VDD-power #PWR05
 U 1 1 61146E2D
 P 10700 2150
 F 0 "#PWR05" H 10700 2000 50  0001 C CNN
@@ -424,7 +424,7 @@ F 3 "" H 10700 2150 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Relay:FINDER-30.22 K1
+L timer-light-rescue:FINDER-30.22-Relay K1
 U 1 1 60641311
 P 14700 4300
 F 0 "K1" H 14600 4050 50  0000 R CNN
@@ -437,7 +437,7 @@ $EndComp
 Wire Wire Line
 	15100 4000 15100 3900
 $Comp
-L Diode:1N4001 D3
+L timer-light-rescue:1N4001-Diode D3
 U 1 1 60712853
 P 15400 4300
 F 0 "D3" V 15300 4300 50  0000 L CNN
@@ -461,7 +461,7 @@ Connection ~ 15100 3900
 Wire Wire Line
 	15100 3900 15100 3800
 $Comp
-L Connector:Screw_Terminal_01x04 J2
+L timer-light-rescue:Screw_Terminal_01x04-Connector J2
 U 1 1 6078B9B6
 P 14300 3600
 F 0 "J2" V 14264 3312 50  0000 R CNN
@@ -500,7 +500,7 @@ Wire Wire Line
 Wire Wire Line
 	14200 4000 14200 3800
 $Comp
-L power:VDD #PWR06
+L timer-light-rescue:VDD-power #PWR06
 U 1 1 60D27236
 P 15100 3800
 F 0 "#PWR06" H 15100 3650 50  0001 C CNN
@@ -513,18 +513,18 @@ $EndComp
 NoConn ~ 14800 4600
 NoConn ~ 14400 4600
 $Comp
-L Device:R R4
+L timer-light-rescue:R-Device R4
 U 1 1 606AB54D
 P 15100 6450
-F 0 "R4" H 15150 6450 50  0000 L CNN
-F 1 "10k" V 15000 6350 50  0000 L CNN
+F 0 "R4" H 14950 6450 50  0000 L CNN
+F 1 "Voir Note 1" V 15200 6200 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 15030 6450 50  0001 C CNN
 F 3 "~" H 15100 6450 50  0001 C CNN
 	1    15100 6450
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:LED D2
+L timer-light-rescue:LED-Device D2
 U 1 1 606AC887
 P 15100 6800
 F 0 "D2" V 15139 6682 50  0000 R CNN
@@ -541,7 +541,7 @@ Wire Wire Line
 Wire Wire Line
 	15100 5850 15100 5800
 $Comp
-L power:GND #PWR08
+L timer-light-rescue:GND-power #PWR08
 U 1 1 606C88D1
 P 15350 7700
 F 0 "#PWR08" H 15350 7450 50  0001 C CNN
@@ -554,7 +554,7 @@ $EndComp
 Wire Wire Line
 	15100 6650 15100 6600
 $Comp
-L power:VDD #PWR07
+L timer-light-rescue:VDD-power #PWR07
 U 1 1 609351A5
 P 15100 6200
 F 0 "#PWR07" H 15100 6050 50  0001 C CNN
@@ -578,7 +578,7 @@ Connection ~ 10200 1000
 Wire Wire Line
 	10050 1000 10050 1700
 $Comp
-L 4xxx:4040 U7
+L timer-light-rescue:4040-4xxx U7
 U 1 1 60009D04
 P 5850 1800
 F 0 "U7" H 6000 2450 50  0000 C CNN
@@ -617,7 +617,7 @@ Wire Wire Line
 Wire Wire Line
 	4350 1250 4250 1250
 $Comp
-L Device:Jumper_NC_Dual JP1
+L timer-light-rescue:Jumper_NC_Dual-Device JP1
 U 1 1 60188FD0
 P 8700 1650
 F 0 "JP1" V 8550 1700 50  0000 L CNN
@@ -628,7 +628,7 @@ F 3 "~" H 8700 1650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper_NC_Dual JP2
+L timer-light-rescue:Jumper_NC_Dual-Device JP2
 U 1 1 601808A0
 P 8700 2300
 F 0 "JP2" V 8550 2350 50  0000 L CNN
@@ -661,7 +661,7 @@ Diviseur\npar 60
 Text Label 4150 2300 0    50   ~ 0
 500ms
 $Comp
-L 4xxx:4011 U6
+L timer-light-rescue:4011-4xxx U6
 U 3 1 6149AF68
 P 5800 8300
 F 0 "U6" V 5800 8250 50  0000 L CNN
@@ -672,7 +672,7 @@ F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms
 	0    -1   1    0   
 $EndComp
 $Comp
-L 4xxx:4011 U6
+L timer-light-rescue:4011-4xxx U6
 U 4 1 6149E7EF
 P 6550 8300
 F 0 "U6" V 6550 8250 50  0000 L CNN
@@ -706,7 +706,7 @@ Wire Wire Line
 	4700 2900 5850 2900
 Connection ~ 4700 2900
 Wire Wire Line
-	7700 1650 7700 2550
+	7700 1650 7700 2250
 Wire Wire Line
 	8700 2400 8700 2450
 Wire Wire Line
@@ -727,7 +727,7 @@ Wire Wire Line
 	15100 4700 15100 5400
 Connection ~ 15100 4700
 $Comp
-L Device:C C18
+L timer-light-rescue:C-Device C18
 U 1 1 648D077C
 P 5200 8300
 F 0 "C18" H 5100 8400 50  0000 C CNN
@@ -752,7 +752,7 @@ Wire Wire Line
 Wire Wire Line
 	11200 1350 11400 1350
 $Comp
-L Device:C C13
+L timer-light-rescue:C-Device C13
 U 1 1 6050A7B4
 P 11400 1200
 F 0 "C13" H 11300 1300 50  0000 C CNN
@@ -801,7 +801,7 @@ Wire Wire Line
 Wire Wire Line
 	8700 2450 9550 2450
 $Comp
-L 4xxx:4011 U1
+L timer-light-rescue:4011-4xxx U1
 U 4 1 60927D3A
 P 4150 7500
 F 0 "U1" V 4050 7450 50  0000 L CNN
@@ -830,7 +830,7 @@ Wire Wire Line
 Wire Wire Line
 	4600 3650 5850 3650
 $Comp
-L 4xxx:4040 U2
+L timer-light-rescue:4040-4xxx U2
 U 1 1 60061128
 P 3400 4250
 F 0 "U2" H 3600 4900 50  0000 C CNN
@@ -863,12 +863,8 @@ Text Label 5750 3950 0    50   ~ 0
 PA4
 Wire Wire Line
 	4250 7200 4250 7150
-Wire Wire Line
-	4150 7800 4150 7900
-Wire Wire Line
-	4150 7900 2650 7900
 $Comp
-L 4xxx:4011 U1
+L timer-light-rescue:4011-4xxx U1
 U 3 1 6173B69D
 P 5450 6850
 F 0 "U1" V 5404 7038 50  0000 L CNN
@@ -896,10 +892,6 @@ Text Label 6750 3850 0    50   ~ 0
 PULSE_ENABLE
 Wire Wire Line
 	10400 3200 10400 3150
-Wire Wire Line
-	9950 7800 9950 7900
-Wire Wire Line
-	9950 7900 8450 7900
 Wire Wire Line
 	4600 3150 5000 3150
 Wire Wire Line
@@ -956,7 +948,7 @@ Connection ~ 7100 1000
 Wire Wire Line
 	7100 1000 10050 1000
 $Comp
-L 4xxx:4011 U1
+L timer-light-rescue:4011-4xxx U1
 U 2 1 600CF71F
 P 2500 3750
 F 0 "U1" H 2500 4075 50  0000 C CNN
@@ -972,7 +964,7 @@ Wire Wire Line
 	2200 3750 2200 3850
 Connection ~ 2200 3750
 $Comp
-L 4xxx:4012 U4
+L timer-light-rescue:4012-4xxx U4
 U 1 1 6019F2E5
 P 3450 6850
 F 0 "U4" V 3404 7087 50  0000 L CNN
@@ -987,7 +979,7 @@ VDD
 Wire Wire Line
 	13500 4250 13500 4000
 $Comp
-L Device:Fuse_Small 2A1
+L timer-light-rescue:Fuse_Small-Device 2A1
 U 1 1 600C0F69
 P 13500 4350
 F 0 "2A1" V 13500 4398 50  0000 L CNN
@@ -998,7 +990,7 @@ F 3 "~" H 13500 4350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:Fuse_Small 2A2
+L timer-light-rescue:Fuse_Small-Device 2A2
 U 1 1 600F7463
 P 13800 4350
 F 0 "2A2" V 13800 4398 50  0000 L CNN
@@ -1011,7 +1003,7 @@ $EndComp
 Wire Wire Line
 	13800 4250 13800 3900
 $Comp
-L Device:R R3
+L timer-light-rescue:R-Device R3
 U 1 1 600F96BE
 P 14600 7300
 F 0 "R3" V 14700 7250 50  0000 L CNN
@@ -1022,7 +1014,7 @@ F 3 "~" H 14600 7300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Transistor_BJT:BC107 Q2
+L timer-light-rescue:BC107-Transistor_BJT Q2
 U 1 1 6013035D
 P 15000 7300
 F 0 "Q2" H 15190 7346 50  0000 L CNN
@@ -1046,7 +1038,7 @@ Wire Wire Line
 Wire Wire Line
 	15100 6950 15100 7100
 $Comp
-L power:GND #PWR02
+L timer-light-rescue:GND-power #PWR02
 U 1 1 648D0F0F
 P 5200 8550
 F 0 "#PWR02" H 5200 8300 50  0001 C CNN
@@ -1057,7 +1049,7 @@ F 3 "" H 5200 8550 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:C C16
+L timer-light-rescue:C-Device C16
 U 1 1 60408ADD
 P 2400 4050
 F 0 "C16" H 2300 4150 50  0000 C CNN
@@ -1070,46 +1062,16 @@ $EndComp
 Wire Wire Line
 	2250 4050 2150 4050
 $Comp
-L power:GND #PWR01
-U 1 1 6040A5D1
-P 2150 4050
-F 0 "#PWR01" H 2150 3800 50  0001 C CNN
-F 1 "GND" H 2155 3877 50  0000 C CNN
-F 2 "" H 2150 4050 50  0001 C CNN
-F 3 "" H 2150 4050 50  0001 C CNN
-	1    2150 4050
-	0    1    -1   0   
-$EndComp
-$Comp
-L 4xxx:4011 U6
+L timer-light-rescue:4011-4xxx U6
 U 1 1 600457D1
-P 4450 8000
-F 0 "U6" V 4404 8188 50  0000 L CNN
-F 1 "4011" V 4495 8188 50  0000 L CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 4450 8000 50  0001 C CNN
-F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf" H 4450 8000 50  0001 C CNN
-	1    4450 8000
-	1    0    0    -1  
+P 2650 7400
+F 0 "U6" V 2604 7588 50  0000 L CNN
+F 1 "4011" V 2695 7588 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 2650 7400 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf" H 2650 7400 50  0001 C CNN
+	1    2650 7400
+	0    -1   -1   0   
 $EndComp
-Connection ~ 4150 7900
-$Comp
-L 4xxx:4011 U6
-U 2 1 60083D9E
-P 8150 8000
-F 0 "U6" V 8104 8188 50  0000 L CNN
-F 1 "4011" V 8195 8188 50  0000 L CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 8150 8000 50  0001 C CNN
-F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf" H 8150 8000 50  0001 C CNN
-	2    8150 8000
-	-1   0    0    1   
-$EndComp
-Connection ~ 8450 7900
-Wire Wire Line
-	4750 8000 5200 8000
-Wire Wire Line
-	4150 8100 4150 7900
-Wire Wire Line
-	8450 8100 8450 7900
 Wire Wire Line
 	5150 6050 4850 6050
 Text Label 4850 6050 0    50   ~ 0
@@ -1122,7 +1084,7 @@ Wire Wire Line
 	14750 7300 14800 7300
 Connection ~ 12350 1350
 $Comp
-L Device:Polyfuse_Small F1
+L timer-light-rescue:Polyfuse_Small-Device F1
 U 1 1 6009B4D6
 P 12600 1000
 F 0 "F1" V 12395 1000 50  0000 C CNN
@@ -1133,7 +1095,7 @@ F 3 "~" H 12600 1000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:D_Small D1
+L timer-light-rescue:D_Small-Device D1
 U 1 1 6012B526
 P 12350 1150
 F 0 "D1" V 12304 1220 50  0000 L CNN
@@ -1153,7 +1115,7 @@ Wire Wire Line
 Wire Wire Line
 	12350 1350 14000 1350
 $Comp
-L Switch:SW_DIP_x08 SW2
+L timer-light-rescue:SW_DIP_x08-Switch SW2
 U 1 1 600F8554
 P 4300 4550
 F 0 "SW2" H 4300 4200 50  0000 C CNN
@@ -1164,7 +1126,7 @@ F 3 "~" H 4300 4550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_DIP_x04 SW1
+L timer-light-rescue:SW_DIP_x04-Switch SW1
 U 1 1 600FBF85
 P 4300 3850
 F 0 "SW1" H 4300 3700 50  0000 C CNN
@@ -1175,7 +1137,7 @@ F 3 "~" H 4300 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Network04 RN1
+L timer-light-rescue:R_Network04-Device RN1
 U 1 1 6052ABF8
 P 4800 3400
 F 0 "RN1" H 4800 3600 50  0000 L CNN
@@ -1186,7 +1148,7 @@ F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 4800 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Network08 RN2
+L timer-light-rescue:R_Network08-Device RN2
 U 1 1 6052FA41
 P 5400 3400
 F 0 "RN2" H 5600 3600 50  0000 L CNN
@@ -1198,7 +1160,7 @@ F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 5400 3400 50  0001 C CNN
 $EndComp
 Connection ~ 10400 3150
 $Comp
-L 4xxx:4013 U5
+L timer-light-rescue:4013-4xxx U5
 U 1 1 5FEFDB3B
 P 4700 2300
 F 0 "U5" H 4800 2550 50  0000 C CNN
@@ -1209,7 +1171,7 @@ F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xxx:4013 U5
+L timer-light-rescue:4013-4xxx U5
 U 2 1 602E61D4
 P 4650 1350
 F 0 "U5" H 4750 1600 50  0000 C CNN
@@ -1220,7 +1182,7 @@ F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xxx:4012 U9
+L timer-light-rescue:4012-4xxx U9
 U 1 1 60039197
 P 7400 1650
 F 0 "U9" H 7350 1900 50  0000 C CNN
@@ -1231,7 +1193,7 @@ F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms
 	1    0    0    1   
 $EndComp
 $Comp
-L 4xxx:4012 U9
+L timer-light-rescue:4012-4xxx U9
 U 2 1 60094AEF
 P 6700 1650
 F 0 "U9" H 6650 1900 50  0000 C CNN
@@ -1242,7 +1204,7 @@ F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xxx:4011 U1
+L timer-light-rescue:4011-4xxx U1
 U 1 1 60CD70FB
 P 1800 3750
 F 0 "U1" H 1800 4075 50  0000 C CNN
@@ -1265,7 +1227,7 @@ Wire Wire Line
 Wire Wire Line
 	5550 6550 5350 6550
 $Comp
-L 4xxx_IEEE:4068 U8
+L timer-light-rescue:4068-4xxx_IEEE U8
 U 1 1 615F5A6D
 P 5550 6050
 F 0 "U8" V 5500 6150 50  0000 L CNN
@@ -1276,7 +1238,7 @@ F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms
 	0    1    1    0   
 $EndComp
 $Comp
-L 4xxx:4012 U4
+L timer-light-rescue:4012-4xxx U4
 U 2 1 60825162
 P 3300 6050
 F 0 "U4" V 3254 6287 50  0000 L CNN
@@ -1433,7 +1395,7 @@ Wire Wire Line
 Wire Wire Line
 	5000 3150 9200 3150
 $Comp
-L 4xxx:4011 U10
+L timer-light-rescue:4011-4xxx U10
 U 4 1 6023304E
 P 9950 7500
 F 0 "U10" V 9850 7450 50  0000 L CNN
@@ -1454,7 +1416,7 @@ Wire Wire Line
 Wire Wire Line
 	10400 3650 11650 3650
 $Comp
-L 4xxx:4040 U11
+L timer-light-rescue:4040-4xxx U11
 U 1 1 6023305E
 P 9200 4250
 F 0 "U11" H 9400 4900 50  0000 C CNN
@@ -1482,7 +1444,7 @@ PU4
 Wire Wire Line
 	10050 7200 10050 7150
 $Comp
-L 4xxx:4011 U10
+L timer-light-rescue:4011-4xxx U10
 U 3 1 60233125
 P 11250 6850
 F 0 "U10" V 11204 7038 50  0000 L CNN
@@ -1503,7 +1465,7 @@ Wire Wire Line
 Wire Wire Line
 	8600 3750 8700 3750
 $Comp
-L 4xxx:4011 U10
+L timer-light-rescue:4011-4xxx U10
 U 2 1 60233139
 P 8300 3750
 F 0 "U10" H 8300 4075 50  0000 C CNN
@@ -1519,7 +1481,7 @@ Wire Wire Line
 	8000 3750 8000 3850
 Connection ~ 8000 3750
 $Comp
-L 4xxx:4012 U12
+L timer-light-rescue:4012-4xxx U12
 U 1 1 60233146
 P 9250 6850
 F 0 "U12" V 9204 7087 50  0000 L CNN
@@ -1532,7 +1494,7 @@ $EndComp
 Text Label 8700 6550 0    50   ~ 0
 VDD
 $Comp
-L Device:C C17
+L timer-light-rescue:C-Device C17
 U 1 1 60233151
 P 8200 4050
 F 0 "C17" H 8100 4150 50  0000 C CNN
@@ -1544,17 +1506,6 @@ F 3 "~" H 8200 4050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8050 4050 7950 4050
-$Comp
-L power:GND #PWR03
-U 1 1 6023315D
-P 7950 4050
-F 0 "#PWR03" H 7950 3800 50  0001 C CNN
-F 1 "GND" H 7955 3877 50  0000 C CNN
-F 2 "" H 7950 4050 50  0001 C CNN
-F 3 "" H 7950 4050 50  0001 C CNN
-	1    7950 4050
-	0    1    -1   0   
-$EndComp
 Wire Wire Line
 	10950 6050 10650 6050
 Text Label 10650 6050 0    50   ~ 0
@@ -1564,7 +1515,7 @@ Wire Wire Line
 Text Label 11950 6050 0    50   ~ 0
 VDD
 $Comp
-L Device:R_Network04 RN3
+L timer-light-rescue:R_Network04-Device RN3
 U 1 1 6023318A
 P 10600 3400
 F 0 "RN3" H 10600 3600 50  0000 L CNN
@@ -1575,7 +1526,7 @@ F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 10600 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Network08 RN4
+L timer-light-rescue:R_Network08-Device RN4
 U 1 1 60233194
 P 11200 3400
 F 0 "RN4" H 11400 3600 50  0000 L CNN
@@ -1586,7 +1537,7 @@ F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 11200 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xxx:4011 U10
+L timer-light-rescue:4011-4xxx U10
 U 1 1 6023319E
 P 7600 3750
 F 0 "U10" H 7600 4075 50  0000 C CNN
@@ -1603,7 +1554,7 @@ Wire Wire Line
 Wire Wire Line
 	11350 6550 11150 6550
 $Comp
-L 4xxx_IEEE:4068 U13
+L timer-light-rescue:4068-4xxx_IEEE U13
 U 1 1 602331CB
 P 11350 6050
 F 0 "U13" V 11300 6150 50  0000 L CNN
@@ -1614,7 +1565,7 @@ F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms
 	0    1    1    0   
 $EndComp
 $Comp
-L 4xxx:4012 U12
+L timer-light-rescue:4012-4xxx U12
 U 2 1 602331D5
 P 9100 6050
 F 0 "U12" V 9054 6287 50  0000 L CNN
@@ -1780,12 +1731,12 @@ Text Label 9350 7150 0    50   ~ 0
 &PU1-4
 Text Label 10700 7150 0    50   ~ 0
 &PU5-12
-Text Label 3750 7900 0    50   ~ 0
+Text Label 2650 7000 1    50   ~ 0
 RSTPA
-Text Label 9600 7900 0    50   ~ 0
+Text Label 8450 7000 1    50   ~ 0
 RSTPU
 $Comp
-L Switch:SW_DIP_x08 SW4
+L timer-light-rescue:SW_DIP_x08-Switch SW4
 U 1 1 60233176
 P 10100 4550
 F 0 "SW4" H 10100 4200 50  0000 C CNN
@@ -1796,7 +1747,7 @@ F 3 "~" H 10100 4550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_DIP_x04 SW3
+L timer-light-rescue:SW_DIP_x04-Switch SW3
 U 1 1 60233180
 P 10100 3850
 F 0 "SW3" H 10100 3700 50  0000 C CNN
@@ -1822,13 +1773,9 @@ Text Label 3350 5550 1    50   ~ 0
 PA2
 Wire Wire Line
 	8350 4050 8450 4050
-Wire Wire Line
-	8450 7900 8450 4050
 Connection ~ 8450 4050
 Wire Wire Line
 	8450 4050 8700 4050
-Wire Wire Line
-	2650 7900 2650 4050
 Connection ~ 2650 4050
 Wire Wire Line
 	2650 4050 2900 4050
@@ -1844,7 +1791,7 @@ F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C19
+L timer-light-rescue:CP-Device C19
 U 1 1 6005FC80
 P 11400 1500
 F 0 "C19" H 11282 1454 50  0000 R CNN
@@ -1885,7 +1832,7 @@ Wire Wire Line
 Wire Wire Line
 	11400 1000 12350 1000
 $Comp
-L 4xxx:4012 U12
+L timer-light-rescue:4012-4xxx U12
 U 3 1 60292FB4
 P 13350 2450
 F 0 "U12" H 13450 2800 50  0000 C CNN
@@ -1896,7 +1843,7 @@ F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms
 	-1   0    0    -1  
 $EndComp
 $Comp
-L 4xxx:4011 U1
+L timer-light-rescue:4011-4xxx U1
 U 5 1 60293B44
 P 15600 2450
 F 0 "U1" H 15450 2800 50  0000 C CNN
@@ -1907,7 +1854,7 @@ F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xxx:4011 U6
+L timer-light-rescue:4011-4xxx U6
 U 5 1 60298ACF
 P 14250 2450
 F 0 "U6" H 14100 2800 50  0000 C CNN
@@ -1918,7 +1865,7 @@ F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xxx:4011 U10
+L timer-light-rescue:4011-4xxx U10
 U 5 1 602998A8
 P 13800 2450
 F 0 "U10" H 13650 2800 50  0000 C CNN
@@ -1929,7 +1876,7 @@ F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xxx:4013 U5
+L timer-light-rescue:4013-4xxx U5
 U 3 1 6029D560
 P 14700 2450
 F 0 "U5" H 14550 2800 50  0000 C CNN
@@ -1963,8 +1910,6 @@ Wire Wire Line
 	14700 2950 14250 2950
 Text Label 11550 4750 0    50   ~ 0
 PU11
-Wire Wire Line
-	6650 8000 7850 8000
 Wire Wire Line
 	11400 1350 12350 1350
 Wire Wire Line
@@ -2009,7 +1954,7 @@ Wire Wire Line
 Wire Wire Line
 	14700 2950 15150 2950
 $Comp
-L 4xxx:4012 U4
+L timer-light-rescue:4012-4xxx U4
 U 3 1 6028EAB0
 P 15150 2450
 F 0 "U4" H 15300 2800 50  0000 C CNN
@@ -2026,7 +1971,7 @@ Connection ~ 15150 2950
 Wire Wire Line
 	15150 2950 15600 2950
 $Comp
-L 4xxx:4012 U9
+L timer-light-rescue:4012-4xxx U9
 U 3 1 6020BA27
 P 12900 2450
 F 0 "U9" H 13000 2800 50  0000 C CNN
@@ -2042,4 +1987,94 @@ Connection ~ 13350 1950
 Wire Wire Line
 	12900 2950 13350 2950
 Connection ~ 13350 2950
+Wire Wire Line
+	2650 7100 2650 4050
+Wire Wire Line
+	2550 7700 2750 7700
+Connection ~ 2750 7700
+Wire Wire Line
+	4150 8000 5200 8000
+Wire Wire Line
+	4150 8000 2750 8000
+Connection ~ 4150 8000
+Wire Wire Line
+	4150 7800 4150 8000
+Wire Wire Line
+	2750 7700 2750 8000
+$Comp
+L timer-light-rescue:4011-4xxx U6
+U 2 1 60083D9E
+P 8450 7400
+F 0 "U6" V 8404 7588 50  0000 L CNN
+F 1 "4011" V 8495 7588 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 8450 7400 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf" H 8450 7400 50  0001 C CNN
+	2    8450 7400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8450 7100 8450 4050
+Wire Wire Line
+	6650 8000 8550 8000
+Wire Wire Line
+	9950 7800 9950 8000
+Wire Wire Line
+	8550 7700 8350 7700
+Wire Wire Line
+	8550 7700 8550 8000
+Connection ~ 8550 7700
+Connection ~ 8550 8000
+Wire Wire Line
+	8550 8000 9950 8000
+Text Notes 14250 7850 0    50   ~ 0
+Note 1 :\nR4 = 330 ohms sous 5V\nR4 = 1 Kohms sous 12V
+$Comp
+L timer-light-rescue:C-Device C20
+U 1 1 6043FE56
+P 7550 2250
+F 0 "C20" H 7450 2350 50  0000 C CNN
+F 1 "100nF" H 7450 2150 39  0000 C CNN
+F 2 "Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 7588 2100 50  0001 C CNN
+F 3 "~" H 7550 2250 50  0001 C CNN
+	1    7550 2250
+	0    -1   -1   0   
+$EndComp
+Connection ~ 7700 2250
+Wire Wire Line
+	7700 2250 7700 2550
+$Comp
+L timer-light-rescue:VDD-power #PWR0101
+U 1 1 60440E2F
+P 7200 2250
+F 0 "#PWR0101" H 7200 2100 50  0001 C CNN
+F 1 "VDD" H 7215 2423 50  0000 C CNN
+F 2 "" H 7200 2250 50  0001 C CNN
+F 3 "" H 7200 2250 50  0001 C CNN
+	1    7200 2250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7400 2250 7200 2250
+$Comp
+L timer-light-rescue:VDD-power #PWR0102
+U 1 1 60467EC8
+P 2150 4050
+F 0 "#PWR0102" H 2150 3900 50  0001 C CNN
+F 1 "VDD" H 2165 4223 50  0000 C CNN
+F 2 "" H 2150 4050 50  0001 C CNN
+F 3 "" H 2150 4050 50  0001 C CNN
+	1    2150 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L timer-light-rescue:VDD-power #PWR0103
+U 1 1 60469846
+P 7950 4050
+F 0 "#PWR0103" H 7950 3900 50  0001 C CNN
+F 1 "VDD" H 7965 4223 50  0000 C CNN
+F 2 "" H 7950 4050 50  0001 C CNN
+F 3 "" H 7950 4050 50  0001 C CNN
+	1    7950 4050
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
